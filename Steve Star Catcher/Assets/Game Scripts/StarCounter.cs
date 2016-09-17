@@ -1,8 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class StarCounter : MonoBehaviour
 {
+    Action StarFunctions;
+
+
+
     int red;
     int blue;
     int green;
@@ -19,15 +24,30 @@ public class StarCounter : MonoBehaviour
     double greenPercenet;
     double whitePercent;
 
+    System.Random rnd = new System.Random();
+    
+
+    void StarFunctionsHandler()
+    {
+
+        print(strInSky);
+        strInSky = strInSky - (int)(fallRate);
+        if (strInSky <= 0)
+        {
+            StarFunctions = null;
+        }
+
+    }
     
     // Use this for initialization
     void Start()
     {
+
         red = 0;
         blue = 1;
         green = 2;
         white = 3;
-        fallRate = 1;
+        fallRate = rnd.Next(1, 10);
         strInSky = 100;
         strInBag = 0;
         redPoint = 10;
@@ -38,6 +58,8 @@ public class StarCounter : MonoBehaviour
         bluePercent = 0.25;
         greenPercenet = 0.10;
         whitePercent = 0.45;
+
+        StarFunctions = StarFunctions;
     }
 
     // Update is called once per frame
@@ -45,12 +67,10 @@ public class StarCounter : MonoBehaviour
     {
 
 
-        if (strInSky > 0)
+        if (StarFunctions != null)
         {
-            print(strInSky);
-            strInSky = strInSky - (int)(fallRate);
+            StarFunctions();
         }
-
 
     }
 
