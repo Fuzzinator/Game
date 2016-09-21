@@ -5,9 +5,9 @@ using System;
 public class StarCounter : MonoBehaviour
 {
     Action StarFunctions;
+    Action StarsLeft;
 
-
-
+    int starTypes;
     int red;
     int blue;
     int green;
@@ -31,18 +31,31 @@ public class StarCounter : MonoBehaviour
     {
 
         print(strInSky);
-        strInSky = strInSky - (int)(fallRate);
+        
         if (strInSky <= 0)
         {
             StarFunctions = null;
         }
 
     }
+
+    void StarsLeftHandler()
+    {
+        do
+        {
+            print(" There are " + strInSky + "stars left in the sky");
+            strInSky = strInSky - (int)(fallRate);
+
+        } while (strInSky > 0);
+
+        
+
+    }
     
     // Use this for initialization
     void Start()
     {
-
+        starTypes = 3;
         red = 0;
         blue = 1;
         green = 2;
@@ -59,17 +72,17 @@ public class StarCounter : MonoBehaviour
         greenPercenet = 0.10;
         whitePercent = 0.45;
 
-        StarFunctions = StarFunctions;
+        StarFunctions = StarFunctionsHandler;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
 
         if (StarFunctions != null)
         {
-            StarFunctions();
+            StarTypes();
         }
 
     }
@@ -77,11 +90,17 @@ public class StarCounter : MonoBehaviour
     public int[] StarTypes()
     {
 
-        int[] starPercents = new int [4];
+        int[] starPercents = new int [starTypes];
         starPercents[red] = (int)(strInSky * redPercent);
         starPercents[blue] = (int)(strInSky * bluePercent);
         starPercents[green] = (int)(strInSky * greenPercenet);
         starPercents[white] = (int)(strInSky * whitePercent);
+
+        foreach (int stars in starPercents)
+            print(stars);
+
+
+        StarsLeft = StarsLeftHandler;
 
         return starPercents;
     }
