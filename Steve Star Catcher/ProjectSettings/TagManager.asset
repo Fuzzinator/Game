@@ -15,10 +15,10 @@ TagManager:
   - 
   - Recycler
   - Level
-  - 
-  - 
-  - 
-  - 
+  - DeathWall
+  - Player
+  - Foreground
+  - Background
   - 
   - 
   - 

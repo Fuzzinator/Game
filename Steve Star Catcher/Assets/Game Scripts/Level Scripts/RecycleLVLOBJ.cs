@@ -20,6 +20,7 @@ public class RecycleLVLOBJ : MonoBehaviour {
         recyclableList = new List<Recycler>();
         Recycler.RecycleAction += RecycleActionHandler;
 
+        
     }
 
     private void RecycleActionHandler(Recycler _recycler)

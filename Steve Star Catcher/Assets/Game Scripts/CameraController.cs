@@ -7,7 +7,7 @@ public class CameraController : MonoBehaviour {
     //private Vector3 offset;
 
     
-       public float offset = 1.5f;
+       public float offset = .5f;
     
     
     

@@ -7,11 +7,16 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: ground_1:pCube8
+    100004: initialShadingGroup_pCube8
     400000: //RootNode
     400002: ground_1:pCube8
+    400004: initialShadingGroup_pCube8
     2300000: ground_1:pCube8
+    2300002: initialShadingGroup_pCube8
     3300000: ground_1:pCube8
+    3300002: initialShadingGroup_pCube8
     4300000: ground_1:pCube8
+    4300002: initialShadingGroup_pCube8
   materials:
     importMaterials: 1
     materialName: 0
