@@ -8,11 +8,12 @@ public class DeathWall : MonoBehaviour {
 	void Start ()
     {
         StaticVars.nextSectionPos = StaticVars.startPos;
+        //StaticVars.playerScore = 0;
 
 	}
 
     void OnTriggerEnter ()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
     }
 }

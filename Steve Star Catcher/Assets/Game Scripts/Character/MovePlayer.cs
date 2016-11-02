@@ -72,6 +72,16 @@ public class MovePlayer : MonoBehaviour {
   
 
 	}
+
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.layer == 15)
+        {
+            StaticVars.playerScore++;
+            print(StaticVars.playerScore);
+        }
+
+    }
 	
 	// Update is called once per frame update is bad
 	void Update () {
@@ -171,8 +181,12 @@ public class MovePlayer : MonoBehaviour {
 
 
 
-        //Set gravity
-        tempposition.y -= gravity;
+
+        if (!controller.isGrounded )
+        {
+            //Set gravity
+            tempposition.y -= gravity;
+        }
 
     }
 }

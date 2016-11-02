@@ -23,6 +23,7 @@ public class StarCounter : MonoBehaviour
     double bluePercent;
     double greenPercenet;
     double whitePercent;
+    bool printOnce;
 
     System.Random rnd = new System.Random();
     
@@ -55,7 +56,7 @@ public class StarCounter : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        starTypes = 3;
+        starTypes = 4;
         red = 0;
         blue = 1;
         green = 2;
@@ -72,37 +73,44 @@ public class StarCounter : MonoBehaviour
         greenPercenet = 0.10;
         whitePercent = 0.45;
 
+        printOnce = true;
+
         StarFunctions = StarFunctionsHandler;
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    //void Update()
+    //{
         
 
-        if (StarFunctions != null)
-        {
-            StarTypes();
-        }
+    //    if (StarFunctions != null)
+    //    {
+    //        StarTypes();
+    //    }
 
-    }
+    //}
 
-    public int[] StarTypes()
-    {
+    //public int[] StarTypes()
+    //{
 
-        int[] starPercents = new int [starTypes];
-        starPercents[red] = (int)(strInSky * redPercent);
-        starPercents[blue] = (int)(strInSky * bluePercent);
-        starPercents[green] = (int)(strInSky * greenPercenet);
-        starPercents[white] = (int)(strInSky * whitePercent);
+    //    int[] starPercents = new int [starTypes];
+    //    starPercents[red] = (int)(strInSky * redPercent);
+    //    starPercents[blue] = (int)(strInSky * bluePercent);
+    //    starPercents[green] = (int)(strInSky * greenPercenet);
+    //    starPercents[white] = (int)(strInSky * whitePercent);
 
-        foreach (int stars in starPercents)
-            print(stars);
+    //    if (starPercents != null && printOnce != false)
+    //    {
+    //        printOnce = false;
+    //        foreach (int starsTypes in starPercents)
+    //            print(starsTypes);
 
 
-        StarsLeft = StarsLeftHandler;
+    //    }
 
-        return starPercents;
-    }
+    //    StarsLeft = StarsLeftHandler;
+
+    //    return starPercents;
+    //}
 }
 

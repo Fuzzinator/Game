@@ -1,0 +1,286 @@
+fileFormatVersion: 2
+guid: 722341363c0fa934da1060c3fd41d607
+timeCreated: 1476722511
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WolfRunningSpriteSheet_0
+    21300002: WolfRunningSpriteSheet_1
+    21300004: WolfRunningSpriteSheet_2
+    21300006: WolfRunningSpriteSheet_3
+    21300008: WolfRunningSpriteSheet_4
+    21300010: WolfRunningSpriteSheet_5
+    21300012: WolfRunningSpriteSheet_6
+    21300014: WolfRunningSpriteSheet_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: WolfRunningSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1686
+        width: 2075
+        height: 1288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 182.50638, y: 115.608154}
+        - {x: -139.49362, y: 115.608154}
+        - {x: -184.49362, y: 82.608154}
+        - {x: -184.49362, y: 22.608154}
+        - {x: -166.49362, y: -27.391846}
+        - {x: -98.49362, y: -73.391846}
+        - {x: -70.49362, y: -71.391846}
+        - {x: -59.49362, y: -47.391846}
+        - {x: -65.49362, y: -99.391846}
+        - {x: -41.49362, y: -114.391846}
+        - {x: 19.506378, y: -114.391846}
+        - {x: 16.506378, y: -105.391846}
+        - {x: 185.50638, y: -3.3918457}
+        - {x: 185.50638, y: 94.608154}
+    - name: WolfRunningSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 3184
+        y: 1721
+        width: 2162
+        height: 1236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -129.19196, y: 111.32779}
+        - {x: -192.19196, y: 82.32779}
+        - {x: -192.19196, y: 32.32779}
+        - {x: -164.19196, y: -13.672211}
+        - {x: -144.19196, y: -22.67221}
+        - {x: -116.191956, y: -17.67221}
+        - {x: -87.191956, y: 3.3277893}
+        - {x: -73.191956, y: -5.6722107}
+        - {x: -86.191956, y: -59.67221}
+        - {x: -76.191956, y: -63.67221}
+        - {x: -47.191956, y: -69.67221}
+        - {x: 20.808044, y: -76.67221}
+        - {x: 28.808044, y: -73.67221}
+        - {x: 29.808044, y: -36.67221}
+        - {x: 43.808044, y: -74.67221}
+        - {x: 15.808044, y: -101.67221}
+        - {x: 12.808044, y: -109.67221}
+        - {x: 60.808044, y: -109.67221}
+        - {x: 112.808044, y: -92.67221}
+        - {x: 193.80804, y: 4.3277893}
+        - {x: 193.80804, y: 98.32779}
+        - {x: 134.80804, y: 111.32779}
+    - name: WolfRunningSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 5943
+        y: 1753
+        width: 2401
+        height: 1282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 55.59204, y: -105.98572}
+        - {x: 148.59204, y: -88.98572}
+        - {x: 157.59204, y: -84.98572}
+        - {x: 154.59204, y: -31.985718}
+        - {x: 213.59204, y: 36.014282}
+        - {x: 213.59204, y: 72.01428}
+        - {x: 198.59204, y: 96.01428}
+        - {x: 175.59204, y: 115.01428}
+        - {x: 51.59204, y: 115.01428}
+        - {x: -213.40796, y: 75.01428}
+        - {x: -213.40796, y: -23.985718}
+        - {x: -118.40796, y: -113.98572}
+        - {x: -8.407959, y: -113.98572}
+        - {x: -6.407959, y: -112.98572}
+        - {x: 1.592041, y: -102.98572}
+        - {x: -38.40796, y: -75.98572}
+        - {x: 5.592041, y: -94.98572}
+    - name: WolfRunningSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 8744
+        y: 1714
+        width: 2722
+        height: 1322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 232.33972, y: -23.416138}
+        - {x: 221.33972, y: -6.4161377}
+        - {x: 243.33972, y: 26.583862}
+        - {x: 243.33972, y: 71.58386}
+        - {x: 203.33972, y: 113.58386}
+        - {x: 198.33972, y: 118.58386}
+        - {x: 138.33972, y: 118.58386}
+        - {x: 102.33972, y: 77.58386}
+        - {x: -134.66028, y: 93.58386}
+        - {x: -240.66028, y: 87.58386}
+        - {x: -241.66028, y: 87.58386}
+        - {x: -241.66028, y: -94.41614}
+        - {x: -237.66028, y: -102.41614}
+        - {x: -168.66028, y: -117.41614}
+        - {x: 32.33972, y: -117.41614}
+        - {x: 41.33972, y: -41.416138}
+        - {x: 149.33972, y: -116.41614}
+        - {x: 236.33972, y: -49.416138}
+    - name: WolfRunningSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 59
+        width: 2882
+        height: 1334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 256.5, y: 98.48451}
+        - {x: 207.5, y: 119.48451}
+        - {x: 172.5, y: 119.48451}
+        - {x: 156.5, y: 113.48451}
+        - {x: 31.5, y: 74.48451}
+        - {x: -162.5, y: 107.48451}
+        - {x: -256.5, y: 102.48451}
+        - {x: -256.5, y: 83.48451}
+        - {x: -177.5, y: 40.484512}
+        - {x: -235.5, y: -98.51549}
+        - {x: -202.5, y: -118.51549}
+        - {x: -65.5, y: -118.51549}
+        - {x: 2.5, y: 17.484512}
+        - {x: 189.5, y: -63.515488}
+        - {x: 256.5, y: -76.51549}
+    - name: WolfRunningSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 2928
+        y: 59
+        width: 2770
+        height: 1265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 192.81592, y: -68.51549}
+        - {x: 225.81592, y: -48.515488}
+        - {x: 246.81592, y: -29.515488}
+        - {x: 246.81592, y: 85.48451}
+        - {x: 235.81592, y: 113.48451}
+        - {x: -246.18408, y: 113.48451}
+        - {x: -246.18408, y: -22.515488}
+        - {x: -245.18408, y: -24.515488}
+        - {x: -212.18408, y: -41.515488}
+        - {x: -179.18408, y: -50.515488}
+        - {x: -6.184082, y: -112.51549}
+        - {x: 139.81592, y: -112.51549}
+        - {x: 143.81592, y: -104.51549}
+        - {x: 119.81592, y: -87.51549}
+        - {x: 112.81592, y: -86.51549}
+    - name: WolfRunningSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 5819
+        y: 59
+        width: 2665
+        height: 1162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 197.05688, y: -103.01549}
+        - {x: 237.05688, y: 26.984512}
+        - {x: 237.05688, y: 70.98451}
+        - {x: 226.05688, y: 103.98451}
+        - {x: -150.94312, y: 103.98451}
+        - {x: -235.94312, y: 95.98451}
+        - {x: -236.94312, y: 93.98451}
+        - {x: -236.94312, y: 38.984512}
+        - {x: -218.94312, y: -8.015488}
+        - {x: -146.94312, y: -21.015488}
+        - {x: -64.943115, y: 1.9845123}
+        - {x: -41.943115, y: 27.984512}
+        - {x: -10.943115, y: -98.01549}
+        - {x: -4.943115, y: -103.01549}
+        - {x: 52.056885, y: -103.01549}
+        - {x: 67.056885, y: -101.01549}
+        - {x: 57.056885, y: -90.01549}
+        - {x: 38.056885, y: -76.01549}
+        - {x: 112.056885, y: -103.01549}
+    - name: WolfRunningSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 8869
+        y: 59
+        width: 2327
+        height: 1210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -206.94739, y: 108.48451}
+        - {x: -206.94739, y: -7.5154877}
+        - {x: -183.94739, y: -36.515488}
+        - {x: -121.94739, y: -50.515488}
+        - {x: -89.94739, y: -37.515488}
+        - {x: -104.94739, y: -63.515488}
+        - {x: -105.94739, y: -69.51549}
+        - {x: -93.94739, y: -73.51549}
+        - {x: -63.947388, y: -76.51549}
+        - {x: 35.052612, y: -107.51549}
+        - {x: 105.05261, y: -107.51549}
+        - {x: 207.05261, y: -2.5154877}
+        - {x: 207.05261, y: 108.48451}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
