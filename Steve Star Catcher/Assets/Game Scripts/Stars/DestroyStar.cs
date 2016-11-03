@@ -16,11 +16,11 @@ public class DestroyStar : MonoBehaviour {
 
     public int forceTime = 10;
 
-    public float forceRange = 30;
+    public float forceRange = 120;
 
     public GameObject trail;
 
-    private bool canAddForce = true;
+    public int increaseTime = 2;
 
     private bool inAir = true;
 
@@ -79,6 +79,7 @@ public class DestroyStar : MonoBehaviour {
         {
             //print("hit player");
             ++StaticVars.playerScore;
+            StaticVars.totalTime += increaseTime;
             //gameObject.SetActive(false);
             Destroy(gameObject/*, endTime*/);
    

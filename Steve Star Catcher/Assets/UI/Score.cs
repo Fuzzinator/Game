@@ -9,7 +9,7 @@ public class Score : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        score.text = "5";
+        score.text = "0";
         newScore = StaticVars.playerScore.ToString();
     }
 	

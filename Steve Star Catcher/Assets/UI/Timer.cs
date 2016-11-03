@@ -5,15 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour {
 
-    public float startTime;
-    
+
     public Text timer;
 
     private int seconds;
     private int minutes;
     private string time;
     private float secsToMin;
-    public float totalTime;
     public Light gameLight;
     private int doubleDigits = 10;
 
@@ -30,9 +28,9 @@ public class Timer : MonoBehaviour {
     void Start ()
     {
         secsToMin = 60;
-        totalTime = 90;
-        seconds = (int)(totalTime % secsToMin);
-        minutes = (int)(totalTime / secsToMin);
+        StaticVars.totalTime = 15;
+        seconds = (int)(StaticVars.totalTime % secsToMin);
+        minutes = (int)(StaticVars.totalTime / secsToMin);
         time = minutes + ":" + seconds;
     }
 
@@ -54,17 +52,18 @@ public class Timer : MonoBehaviour {
 	void Update ()
     {
         //gameLight.intensity
-        if (totalTime > 0)
+        if (StaticVars.totalTime > 0)
         {
-            totalTime -= Time.deltaTime;
+            StaticVars.totalTime -= Time.deltaTime;
         }
-        else if( totalTime == 0)
+        else if(StaticVars.totalTime <= 0)
         {
+            print("Time's Up!");
             SceneManager.LoadScene(2);
         }
 
-        seconds = (int)(totalTime % secsToMin);
-        minutes = (int)(totalTime / secsToMin);
+        seconds = (int)(StaticVars.totalTime % secsToMin);
+        minutes = (int)(StaticVars.totalTime / secsToMin);
 
         checkTime();
         //time = "" + (int)totalTime;

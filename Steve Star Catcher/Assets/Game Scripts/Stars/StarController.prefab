@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &106326
 GameObject:
   m_ObjectHideFlags: 0
@@ -45,6 +45,22 @@ GameObject:
   - 199: {fileID: 19956162}
   m_Layer: 17
   m_Name: Trail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &159900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 495320}
+  - 135: {fileID: 13507672}
+  m_Layer: 18
+  m_Name: StarTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,8 +112,6 @@ GameObject:
   - 114: {fileID: 11419774}
   - 54: {fileID: 5444250}
   - 135: {fileID: 13570276}
-  - 135: {fileID: 13596414}
-  - 114: {fileID: 11476840}
   - 114: {fileID: 11432056}
   m_Layer: 17
   m_Name: StarController
@@ -169,6 +183,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 406812}
+  - {fileID: 495320}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &493094
@@ -183,6 +198,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 406812}
   m_RootOrder: 0
+--- !u!4 &495320
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159900}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 490254}
+  m_RootOrder: 1
 --- !u!54 &5444250
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -230,18 +257,19 @@ MonoBehaviour:
   forceTime: 5
   forceRange: 30
   trail: {fileID: 143496}
---- !u!114 &11476840
-MonoBehaviour:
+  increaseTime: 2
+--- !u!135 &13507672
+SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 182184}
+  m_GameObject: {fileID: 159900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ffe8a5574648d6438b06b8ba1673366, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  star: {fileID: 182184}
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!135 &13570276
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -253,18 +281,6 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.3
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!135 &13596414
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 182184}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!143 &14339722
 CharacterController:

@@ -8,4 +8,5 @@
     public static float startBackPos = 26f;
 
     public static int playerScore = 0;
+    public static float totalTime = 15;
 }

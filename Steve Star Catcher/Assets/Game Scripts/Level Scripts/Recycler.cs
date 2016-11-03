@@ -24,9 +24,9 @@ public class Recycler : MonoBehaviour
 
 
 
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider col)
     {
-
+        print(col);
         canBeRecycled = true;
         Start();
 
