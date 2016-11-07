@@ -9,12 +9,12 @@ public class BackRecycler : MonoBehaviour
 
     public bool canBeRecycled;
 
-    public Transform background;
+    public Transform cube;
 
     // Use this for initialization
     void Start()
     {
-        background = this.GetComponent<Transform>();
+        cube = this.GetComponent<Transform>();
         if (RecycleAction != null && canBeRecycled)
         {
             RecycleAction(this);
@@ -26,7 +26,7 @@ public class BackRecycler : MonoBehaviour
 
     void OnTriggerEnter()
     {
-
+        print("background");
         canBeRecycled = true;
         Start();
 

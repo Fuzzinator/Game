@@ -1,0 +1,237 @@
+fileFormatVersion: 2
+guid: f3860397241735d4caa7c42b26d8c803
+timeCreated: 1478460932
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Rabbit_Damage_Sprite_Sheet_0
+    21300002: Rabbit_Damage_Sprite_Sheet_1
+    21300004: Rabbit_Damage_Sprite_Sheet_2
+    21300006: Rabbit_Damage_Sprite_Sheet_3
+    21300008: Rabbit_Damage_Sprite_Sheet_4
+    21300010: Rabbit_Damage_Sprite_Sheet_5
+    21300012: Rabbit_Damage_Sprite_Sheet_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Rabbit_Damage_Sprite_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 92
+        width: 593
+        height: 903
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 50.274414, y: -92.36328}
+        - {x: 45.274414, y: -84.36328}
+        - {x: 44.274414, y: -81.36328}
+        - {x: 53.274414, y: -98.36328}
+        - {x: 63.274414, y: -103.36328}
+        - {x: 81.274414, y: -83.36328}
+        - {x: 94.274414, y: -60.36328}
+        - {x: 99.274414, y: -44.36328}
+        - {x: 99.274414, y: 46.63672}
+        - {x: 39.274414, y: 151.63672}
+        - {x: -8.725586, y: 151.63672}
+        - {x: -49.725586, y: -0.36328125}
+        - {x: -98.725586, y: -67.36328}
+        - {x: -98.725586, y: -84.36328}
+        - {x: -95.725586, y: -98.36328}
+        - {x: -3.725586, y: -150.36328}
+        - {x: 37.274414, y: -150.36328}
+        - {x: 32.274414, y: -127.36328}
+        - {x: 29.274414, y: -124.36328}
+        - {x: 19.274414, y: -105.36328}
+        - {x: 37.274414, y: -133.36328}
+        - {x: 54.274414, y: -146.36328}
+        - {x: 63.274414, y: -150.36328}
+        - {x: 77.274414, y: -150.36328}
+        - {x: 81.274414, y: -131.36328}
+        - {x: 74.274414, y: -126.36328}
+        - {x: 53.274414, y: -103.36328}
+    - name: Rabbit_Damage_Sprite_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 29
+        width: 716
+        height: 888
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -91.03906, y: 149.15723}
+        - {x: -119.03906, y: 137.15723}
+        - {x: -119.03906, y: -62.842773}
+        - {x: -34.039062, y: -147.84277}
+        - {x: -30.039062, y: -147.84277}
+        - {x: -19.039062, y: -118.84277}
+        - {x: -20.039062, y: -115.84277}
+        - {x: -20.039062, y: -93.84277}
+        - {x: -17.039062, y: -140.84277}
+        - {x: -11.0390625, y: -147.84277}
+        - {x: -0.0390625, y: -147.84277}
+        - {x: 12.9609375, y: -141.84277}
+        - {x: 120.96094, y: -33.842773}
+        - {x: 120.96094, y: 92.15723}
+        - {x: 79.96094, y: 149.15723}
+      - - {x: 13.9609375, y: -96.84277}
+        - {x: 16.960938, y: -95.84277}
+        - {x: 16.960938, y: -92.84277}
+        - {x: 13.9609375, y: -91.84277}
+        - {x: 11.9609375, y: -93.84277}
+    - name: Rabbit_Damage_Sprite_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 3449
+        y: 858
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Rabbit_Damage_Sprite_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 5414
+        y: 56
+        width: 662
+        height: 840
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 111.9043, y: 55.148438}
+        - {x: 12.904297, y: 141.14844}
+        - {x: -14.095703, y: 141.14844}
+        - {x: -21.095703, y: 139.14844}
+        - {x: -24.095703, y: 110.14844}
+        - {x: -18.095703, y: 78.14844}
+        - {x: -95.0957, y: 36.148438}
+        - {x: -109.0957, y: 28.148438}
+        - {x: -109.0957, y: -106.85156}
+        - {x: -98.0957, y: -139.85156}
+        - {x: 37.904297, y: -139.85156}
+        - {x: 83.9043, y: -125.85156}
+        - {x: 111.9043, y: -11.8515625}
+    - name: Rabbit_Damage_Sprite_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 53
+        width: 725
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 109.11328, y: 125.149414}
+        - {x: 70.11328, y: 125.149414}
+        - {x: -71.88672, y: 30.149414}
+        - {x: -120.88672, y: 18.149414}
+        - {x: -120.88672, y: -32.850586}
+        - {x: -54.88672, y: -123.850586}
+        - {x: 52.11328, y: -123.850586}
+        - {x: 89.11328, y: -93.850586}
+        - {x: 122.11328, y: -41.850586}
+        - {x: 122.11328, y: 27.149414}
+    - name: Rabbit_Damage_Sprite_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3140
+        y: 68
+        width: 701
+        height: 786
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.8554688, y: 132.14453}
+        - {x: -116.85547, y: 59.14453}
+        - {x: -116.85547, y: 22.144531}
+        - {x: -47.85547, y: 10.144531}
+        - {x: -72.85547, y: 5.1445312}
+        - {x: -77.85547, y: -28.855469}
+        - {x: -65.85547, y: -101.85547}
+        - {x: -67.85547, y: -130.85547}
+        - {x: 33.14453, y: -130.85547}
+        - {x: 118.14453, y: -56.85547}
+        - {x: 118.14453, y: 84.14453}
+        - {x: 115.14453, y: 85.14453}
+        - {x: 81.14453, y: 90.14453}
+        - {x: 23.144531, y: 132.14453}
+    - name: Rabbit_Damage_Sprite_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 4277
+        y: 42
+        width: 713
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 119.274414, y: 7.986328}
+        - {x: 119.274414, y: 50.98633}
+        - {x: 66.274414, y: 129.98633}
+        - {x: -114.725586, y: 129.98633}
+        - {x: -118.725586, y: 120.98633}
+        - {x: -118.725586, y: -128.01367}
+        - {x: 21.274414, y: -128.01367}
+        - {x: 119.274414, y: -91.01367}
+        - {x: 119.274414, y: -19.013672}
+        - {x: 95.274414, y: -1.0136719}
+        - {x: 77.274414, y: 8.986328}
+        - {x: 118.274414, y: 5.986328}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

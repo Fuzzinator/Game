@@ -6,11 +6,13 @@ public class MovePlayer : MonoBehaviour {
 
     //use to move player
     private CharacterController controller;
+   
 
     public GameObject MidAir_Up;
     public GameObject MidAir_Down;
     public GameObject Idle;
     public GameObject Running;
+    public GameObject Hurt;
     public GameObject Blink;
 
     //assign location as a temp var to move character
@@ -28,16 +30,34 @@ public class MovePlayer : MonoBehaviour {
 
     public float idleTime;
 
+    public bool hurt = false;
+
+    public float hurtTime = 0.3f;
+
+    public float force = 2;
+
     Action Idle_Hare;
+    Action Hurt_Hare;
 
     void Idle_HareHandler()
     {
-        Idle.SetActive(true);
-        MidAir_Up.SetActive(false);
-        MidAir_Down.SetActive(false);
-        Running.SetActive(false);
-
+            Idle.SetActive(true);
+            MidAir_Up.SetActive(false);
+            MidAir_Down.SetActive(false);
+            Running.SetActive(false);
+            Hurt.SetActive(false);
     }
+
+    //void Hurt_HareHandler()
+    //{
+    //    Idle.SetActive(false);
+    //    MidAir_Up.SetActive(false);
+    //    MidAir_Down.SetActive(false);
+    //    Running.SetActive(false);
+    //    Hurt.SetActive(true);
+
+    //}
+
 
     //Coroutine for sliding character
     IEnumerator Slide()
@@ -65,13 +85,15 @@ public class MovePlayer : MonoBehaviour {
     int jumpMax = 2;
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         controller = GetComponent<CharacterController>();
         Idle_Hare = Idle_HareHandler;
+        
+        
 
-  
 
-	}
+    }
 
     void OnCollisionEnter(Collision col)
     {
@@ -80,11 +102,47 @@ public class MovePlayer : MonoBehaviour {
             StaticVars.playerScore++;
             print(StaticVars.playerScore);
         }
+        //if(col.gameObject.layer == 13)
+        //{
+        //    //Hurt_Hare = Hurt_HareHandler;
+        //    hurt = true;
+        //    print("you got hurt");
+        //}
 
     }
-	
-	// Update is called once per frame update is bad
-	void Update () {
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.name == "Hurt_Hare")
+        {
+            hurt = true;
+            print("you got hurt");
+            StartCoroutine(hare_hurt());
+        }
+    }
+
+    IEnumerator hare_hurt()
+    {
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            print("launch left");
+            //tempposition.x = force;
+            //controller.Move(tempposition * Time.deltaTime);
+            
+        }
+
+        if (Input.GetAxis("Horizontal") < 0)
+        {
+            print("launch right");
+            //tempposition.x = -force;
+            //controller.Move(tempposition * Time.deltaTime);
+        }
+        yield return new WaitForSeconds(hurtTime);
+        hurt = false;
+    }
+
+    // Update is called once per frame update is bad
+    void Update () {
 
        // Idle_Hare();
 
@@ -99,20 +157,52 @@ public class MovePlayer : MonoBehaviour {
         }
         if (controller.isGrounded == false)
         {
-            if (tempposition.y >= 1 )
+            Idle.SetActive(false);
+            Running.SetActive(false);
+
+            if (hurt == false)
             {
-                Idle.SetActive(false);
-                MidAir_Up.SetActive(true);
-                MidAir_Down.SetActive(false);
-                Running.SetActive(false);
+                Hurt.SetActive(false);
+
+                if (tempposition.y >= 1)
+                {
+                    MidAir_Up.SetActive(true);
+                    MidAir_Down.SetActive(false);
+                }
+                else if (tempposition.y < 1)
+                {
+                    MidAir_Up.SetActive(false);
+                    MidAir_Down.SetActive(true);
+                }
             }
-            else if (tempposition.y < 1)
+            if (hurt)
             {
-                Idle.SetActive(false);
                 MidAir_Up.SetActive(false);
-                MidAir_Down.SetActive(true);
+                MidAir_Down.SetActive(false);
+                Idle.SetActive(false);
                 Running.SetActive(false);
+                Hurt.SetActive(true);
+                //yield return new WaitForSeconds(3);
+                //hurt = false;
+
             }
+            //if (tempposition.y >= 1)
+            //{
+            //    Idle.SetActive(false);
+            //    MidAir_Up.SetActive(true);
+            //    MidAir_Down.SetActive(false);
+            //    Running.SetActive(false);
+            //    Hurt.SetActive(false);
+
+            //}
+            //else if (tempposition.y < 1)
+            //{
+            //    Idle.SetActive(false);
+            //    MidAir_Up.SetActive(false);
+            //    MidAir_Down.SetActive(true);
+            //    Running.SetActive(false);
+            //    Hurt.SetActive(false);
+            //}
 
 
 
@@ -121,9 +211,23 @@ public class MovePlayer : MonoBehaviour {
         if (controller.isGrounded)
         {
             jumpCount = 0;
-            Idle.SetActive(true);
-            MidAir_Up.SetActive(false);
-            MidAir_Down.SetActive(false);
+
+            if (hurt)
+            {
+                MidAir_Up.SetActive(false);
+                MidAir_Down.SetActive(false);
+                Idle.SetActive(false);
+                Running.SetActive(false);
+                Hurt.SetActive(true);
+            }
+            else
+            {
+                Idle.SetActive(true);
+                MidAir_Up.SetActive(false);
+                MidAir_Down.SetActive(false);
+                Hurt.SetActive(false);
+
+            }
 
         }
 
