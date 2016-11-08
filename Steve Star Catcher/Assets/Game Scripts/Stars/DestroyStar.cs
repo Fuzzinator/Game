@@ -14,9 +14,9 @@ public class DestroyStar : MonoBehaviour {
 
     public float forceDuration = 1f;
 
-    public int forceTime = 10;
+    public int forceTime = 100;
 
-    public float forceRange = 120;
+    public float forceRange = 300;
 
     public GameObject trail;
 
