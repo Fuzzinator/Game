@@ -18,6 +18,8 @@ public class MovePlayer : MonoBehaviour {
     //assign location as a temp var to move character
     private Vector3 tempposition;
 
+    private Vector2 touchOrigin = -Vector2.one;
+
     // The speed the character moves
     public float speed = 10f;
     //The speed the character falls
@@ -111,15 +113,15 @@ public class MovePlayer : MonoBehaviour {
 
     }
 
-    void OnTriggerEnter(Collider col)
-    {
-        if (col.gameObject.name == "Hurt_Hare")
-        {
-            hurt = true;
-            print("you got hurt");
-            StartCoroutine(hare_hurt());
-        }
-    }
+    //void OnTriggerEnter(Collider col)
+    //{
+    //    if (col.gameObject.name == "Hurt_Hare")
+    //    {
+    //        hurt = true;
+    //        print("you got hurt");
+    //        StartCoroutine(hare_hurt());
+    //    }
+    //}
 
     IEnumerator hare_hurt()
     {
@@ -275,6 +277,21 @@ public class MovePlayer : MonoBehaviour {
             }
         }
 
+        if(Input.touchCount > 0)
+        {
+            Touch mytouch = Input.touches[0];
+            if(mytouch.phase == TouchPhase.Began)
+            {
+                touchOrigin = mytouch.position;
+            }
+            else if(mytouch.phase == TouchPhase.Ended && touchOrigin.x >= 0)
+            {
+                Vector2 touchEnd = mytouch.position;
+                float touchX = touchEnd.x - touchOrigin.x;
+                touchOrigin.x = -1;
+                 
+            }
+        }
 
         //move method takes temp vector3 to move and then use deltatime to control the speed by seconds instead of frames
         controller.Move(tempposition * Time.deltaTime);

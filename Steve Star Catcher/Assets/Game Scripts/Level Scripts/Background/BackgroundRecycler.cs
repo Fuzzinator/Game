@@ -33,8 +33,8 @@ public class BackgroundRecycler : MonoBehaviour {
         nextBackground = backRnd.Next(1, recyclableBackground.Count - 1);
 
         newBackPos.x = StaticVars.nextBackgroundPos;
-        newBackPos.z = this.gameObject.transform.position.z;
-        newBackPos.y = this.gameObject.transform.position.y;
+        //newBackPos.z = this.gameObject.transform.position.z;
+        //newBackPos.y = this.gameObject.transform.position.y;
 
         recyclableBackground[nextBackground].cube.position = newBackPos;
 
