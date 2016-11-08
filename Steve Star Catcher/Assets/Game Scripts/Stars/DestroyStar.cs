@@ -9,6 +9,7 @@ public class DestroyStar : MonoBehaviour {
     public float endTime = 1;
 
     public GameObject hare;
+    public GameObject starColor;
 
     public int playerScore;
 
@@ -20,7 +21,10 @@ public class DestroyStar : MonoBehaviour {
 
     public GameObject trail;
 
-    public int increaseTime = 2;
+    public int whiteIncrease = 1;
+    public int redIncrease = 2;
+    public int blueIncrease = 3;
+    public int greenIncrease = 5;
 
     //public static bool canCollect;
 
@@ -80,8 +84,25 @@ public class DestroyStar : MonoBehaviour {
         if (col.gameObject.name == "Character" && MovePlayer.hurt != true)
         {
             //print("hit player");
-            ++StaticVars.playerScore;
-            StaticVars.totalTime += increaseTime;
+            if (starColor.name == "White_Star")
+            {
+                ++StaticVars.playerScore;
+                StaticVars.totalTime += whiteIncrease;
+            }else if(starColor.name == "Red_Star")
+            {
+                StaticVars.playerScore += redIncrease;
+                StaticVars.totalTime += redIncrease;
+            }
+            else if (starColor.name == "Blue_Star")
+            {
+                StaticVars.playerScore += blueIncrease;
+                StaticVars.totalTime += blueIncrease;
+            }
+            else if (starColor.name == "Green_Star")
+            {
+                StaticVars.playerScore += greenIncrease;
+                StaticVars.totalTime += greenIncrease;
+            }
             //gameObject.SetActive(false);
             Destroy(gameObject/*, endTime*/);
    

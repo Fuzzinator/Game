@@ -3128,7 +3128,7 @@ MonoBehaviour:
   - {fileID: 711369083}
   - {fileID: 711369083}
   star: []
-  stars: {fileID: 0}
+  stars: []
   spawnRate: 1
   canSpawnStars: 1
 --- !u!114 &711369085
@@ -3203,7 +3203,7 @@ MonoBehaviour:
   - {fileID: 722541582}
   - {fileID: 722541582}
   star: []
-  stars: {fileID: 0}
+  stars: []
   spawnRate: 1
   canSpawnStars: 1
 --- !u!114 &722541584
@@ -5063,7 +5063,7 @@ MonoBehaviour:
   - {fileID: 1082604697}
   - {fileID: 1082604697}
   star: []
-  stars: {fileID: 0}
+  stars: []
   spawnRate: 1
   canSpawnStars: 1
 --- !u!114 &1082604699
@@ -5178,7 +5178,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1142671241}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b73e73742b034a347bebff3b50b91c80, type: 3}
   m_Name: 
@@ -8532,48 +8532,6 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: e2b28b6e1ef554843a9a0240302ae30d, type: 3}
---- !u!1001 &1633151953
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 490254, guid: 0193feda1b8b93e459bae79352d88db4, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 7.2000003
-      objectReference: {fileID: 0}
-    - target: {fileID: 490254, guid: 0193feda1b8b93e459bae79352d88db4, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 10.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 490254, guid: 0193feda1b8b93e459bae79352d88db4, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.010000229
-      objectReference: {fileID: 0}
-    - target: {fileID: 490254, guid: 0193feda1b8b93e459bae79352d88db4, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 490254, guid: 0193feda1b8b93e459bae79352d88db4, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 490254, guid: 0193feda1b8b93e459bae79352d88db4, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 490254, guid: 0193feda1b8b93e459bae79352d88db4, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 490254, guid: 0193feda1b8b93e459bae79352d88db4, type: 2}
-      propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 0193feda1b8b93e459bae79352d88db4, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1644300607
 GameObject:
   m_ObjectHideFlags: 0
@@ -8619,7 +8577,7 @@ MonoBehaviour:
   - {fileID: 1644300608}
   - {fileID: 1644300608}
   star: []
-  stars: {fileID: 0}
+  stars: []
   spawnRate: 1
   canSpawnStars: 1
 --- !u!114 &1644300610
@@ -8820,7 +8778,7 @@ MonoBehaviour:
   - {fileID: 1666560498}
   - {fileID: 1666560498}
   star: []
-  stars: {fileID: 0}
+  stars: []
   spawnRate: 1
   canSpawnStars: 1
 --- !u!114 &1666560500
@@ -8941,7 +8899,7 @@ MonoBehaviour:
   - {fileID: 1693532709}
   - {fileID: 1693532709}
   star: []
-  stars: {fileID: 0}
+  stars: []
   spawnRate: 1
   canSpawnStars: 1
 --- !u!114 &1693532711
@@ -10357,7 +10315,19 @@ MonoBehaviour:
   - {fileID: 711369083}
   - {fileID: 722541582}
   star: []
-  stars: {fileID: 182184, guid: 0193feda1b8b93e459bae79352d88db4, type: 2}
+  stars:
+  - {fileID: 182184, guid: 0193feda1b8b93e459bae79352d88db4, type: 2}
+  - {fileID: 182184, guid: 0193feda1b8b93e459bae79352d88db4, type: 2}
+  - {fileID: 182184, guid: 0193feda1b8b93e459bae79352d88db4, type: 2}
+  - {fileID: 182184, guid: 0193feda1b8b93e459bae79352d88db4, type: 2}
+  - {fileID: 182184, guid: 0193feda1b8b93e459bae79352d88db4, type: 2}
+  - {fileID: 182184, guid: 0193feda1b8b93e459bae79352d88db4, type: 2}
+  - {fileID: 149712, guid: e11c115c328803d43bc54252e8ac145f, type: 2}
+  - {fileID: 149712, guid: e11c115c328803d43bc54252e8ac145f, type: 2}
+  - {fileID: 149712, guid: e11c115c328803d43bc54252e8ac145f, type: 2}
+  - {fileID: 171240, guid: 542dd6be6b8881b40ba3fe8f63937434, type: 2}
+  - {fileID: 171240, guid: 542dd6be6b8881b40ba3fe8f63937434, type: 2}
+  - {fileID: 173032, guid: 8fb57b7bf716b29429bbae0c5d88da3b, type: 2}
   spawnRate: 1
   canSpawnStars: 1
 --- !u!114 &1895676963

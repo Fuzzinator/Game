@@ -4,7 +4,7 @@ public class CloneStar : MonoBehaviour {
 
     public Transform[] spawnPoints;
     public GameObject[] star;
-    public Object stars;
+    public Object[] stars;
 
     public int spawnRate = 1;
 
@@ -12,16 +12,15 @@ public class CloneStar : MonoBehaviour {
 
 
     private int i = 0;
-    private int j = 0;
+    private int j;
    
 
     IEnumerator SpawnStars ()
     {
         while (canSpawnStars)
         {
-
             i = Random.Range(0, spawnPoints.Length);
-
+            j = Random.Range(0, stars.Length);
 
             //stars[j].SetActive(true);
             //stars[j].transform.localPosition = spawnPoints[i].position;
@@ -33,9 +32,7 @@ public class CloneStar : MonoBehaviour {
             //}
             //else { j = 0; }
 
- 
-
-            Instantiate(stars, spawnPoints[i].position, Quaternion.identity);
+            Instantiate(stars[j], spawnPoints[i].position, Quaternion.identity);
 
             yield return new WaitForSeconds(spawnRate);
 
