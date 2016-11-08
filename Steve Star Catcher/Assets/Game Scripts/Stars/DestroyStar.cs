@@ -22,6 +22,8 @@ public class DestroyStar : MonoBehaviour {
 
     public int increaseTime = 2;
 
+    //public static bool canCollect;
+
     private bool inAir = true;
 
     private Rigidbody rigid;
@@ -44,7 +46,7 @@ public class DestroyStar : MonoBehaviour {
     {
         rigid = GetComponent<Rigidbody>();
         StartCoroutine(RunRandomForce());
-
+        //canCollect = true;
     }
 
         IEnumerator RunRandomForce()
@@ -75,7 +77,7 @@ public class DestroyStar : MonoBehaviour {
    //     Destroy(gameObject);
    // }
     void OnCollisionEnter(Collision col) {
-        if (col.gameObject.name == "Character")
+        if (col.gameObject.name == "Character" && MovePlayer.hurt != true)
         {
             //print("hit player");
             ++StaticVars.playerScore;

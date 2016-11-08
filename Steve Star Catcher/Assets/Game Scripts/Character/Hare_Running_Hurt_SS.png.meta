@@ -1,0 +1,260 @@
+fileFormatVersion: 2
+guid: cf28a56f167571c419ee79a351d2e9b2
+timeCreated: 1478581120
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Hare_Running_Hurt_SS_0
+    21300002: Hare_Running_Hurt_SS_1
+    21300004: Hare_Running_Hurt_SS_2
+    21300006: Hare_Running_Hurt_SS_3
+    21300008: Hare_Running_Hurt_SS_4
+    21300010: Hare_Running_Hurt_SS_5
+    21300012: Hare_Running_Hurt_SS_6
+    21300014: Hare_Running_Hurt_SS_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Hare_Running_Hurt_SS_0
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 211
+        width: 2029
+        height: 1018
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28.468048, y: 65.02153}
+        - {x: 21.468048, y: 61.021526}
+        - {x: 29.468048, y: 27.021526}
+        - {x: 39.46805, y: 13.021526}
+        - {x: 46.46805, y: 9.021526}
+        - {x: -68.53195, y: 45.021526}
+        - {x: -81.53195, y: 28.021526}
+        - {x: -127.53195, y: -24.978474}
+        - {x: -127.53195, y: -42.978474}
+        - {x: -123.53195, y: -54.978474}
+        - {x: 22.468048, y: -63.978474}
+        - {x: 120.46805, y: -63.978474}
+        - {x: 128.46805, y: -39.978474}
+        - {x: 128.46805, y: -4.9784737}
+        - {x: 52.46805, y: 65.02153}
+    - name: Hare_Running_Hurt_SS_1
+      rect:
+        serializedVersion: 2
+        x: 2717
+        y: 0
+        width: 1956
+        height: 1229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 58.01178, y: 74.5}
+        - {x: 55.01178, y: 77.5}
+        - {x: -33.98822, y: 77.5}
+        - {x: -65.98822, y: 74.5}
+        - {x: -93.98822, y: 41.5}
+        - {x: -122.98822, y: -16.5}
+        - {x: -122.98822, y: -54.5}
+        - {x: 5.01178, y: -77.5}
+        - {x: 106.01178, y: -77.5}
+        - {x: 109.01178, y: -75.5}
+        - {x: 107.01178, y: -64.5}
+        - {x: 124.01178, y: -29.5}
+        - {x: 124.01178, y: 2.5}
+    - name: Hare_Running_Hurt_SS_2
+      rect:
+        serializedVersion: 2
+        x: 5048
+        y: 0
+        width: 1558
+        height: 1165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.005554, y: 73.5}
+        - {x: 3.0055542, y: 73.5}
+        - {x: 2.0055542, y: 70.5}
+        - {x: 2.0055542, y: 60.5}
+        - {x: -4.994446, y: 64.5}
+        - {x: -8.994446, y: 66.5}
+        - {x: -11.994446, y: 55.5}
+        - {x: -34.994446, y: 51.5}
+        - {x: -86.994446, y: 72.5}
+        - {x: -97.994446, y: 50.5}
+        - {x: -97.994446, y: 6.5}
+        - {x: -82.994446, y: -45.5}
+        - {x: -65.994446, y: -60.5}
+        - {x: -52.994446, y: -49.5}
+        - {x: 24.005554, y: -73.5}
+        - {x: 67.005554, y: -73.5}
+        - {x: 99.005554, y: -7.5}
+        - {x: 99.005554, y: 12.5}
+        - {x: 16.005554, y: 70.5}
+    - name: Hare_Running_Hurt_SS_3
+      rect:
+        serializedVersion: 2
+        x: 6980
+        y: 4
+        width: 1416
+        height: 1130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.152832, y: 72.00278}
+        - {x: -89.15283, y: 50.002777}
+        - {x: -89.15283, y: -14.997223}
+        - {x: -87.15283, y: -27.997223}
+        - {x: -32.152832, y: -60.997223}
+        - {x: -26.152832, y: -61.997223}
+        - {x: -29.152832, y: -69.99722}
+        - {x: -28.152832, y: -70.99722}
+        - {x: 3.847168, y: -70.99722}
+        - {x: 51.847168, y: -51.997223}
+        - {x: 89.84717, y: -21.997223}
+        - {x: 89.84717, y: 12.002777}
+        - {x: 8.847168, y: 72.00278}
+    - name: Hare_Running_Hurt_SS_4
+      rect:
+        serializedVersion: 2
+        x: 8770
+        y: 44
+        width: 1392
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80.65979, y: 67.030556}
+        - {x: -87.65979, y: 64.030556}
+        - {x: -87.65979, y: 0.030555725}
+        - {x: -52.65979, y: -46.969444}
+        - {x: -11.65979, y: -65.969444}
+        - {x: 61.34021, y: -65.969444}
+        - {x: 88.34021, y: -14.969444}
+        - {x: 88.34021, y: 32.030556}
+        - {x: 38.34021, y: 67.030556}
+    - name: Hare_Running_Hurt_SS_5
+      rect:
+        serializedVersion: 2
+        x: 10536
+        y: 0
+        width: 1440
+        height: 1086
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45.31665, y: 68.5}
+        - {x: -90.68335, y: 68.5}
+        - {x: -90.68335, y: -60.5}
+        - {x: -64.68335, y: -68.5}
+        - {x: 21.31665, y: -68.5}
+        - {x: 68.31665, y: -45.5}
+        - {x: 91.31665, y: -5.5}
+        - {x: 91.31665, y: 37.5}
+    - name: Hare_Running_Hurt_SS_6
+      rect:
+        serializedVersion: 2
+        x: 12350
+        y: 4
+        width: 1519
+        height: 1162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 96.326294, y: 41.002777}
+        - {x: 25.326294, y: 74.00278}
+        - {x: -43.673706, y: 74.00278}
+        - {x: -93.673706, y: 42.002777}
+        - {x: -95.673706, y: 37.002777}
+        - {x: -95.673706, y: -15.997223}
+        - {x: -80.673706, y: -71.99722}
+        - {x: -78.673706, y: -72.99722}
+        - {x: -44.673706, y: -72.99722}
+        - {x: -40.673706, y: -71.99722}
+        - {x: 48.326294, y: -46.997223}
+        - {x: 86.326294, y: -30.997223}
+        - {x: 96.326294, y: 0.0027770996}
+    - name: Hare_Running_Hurt_SS_7
+      rect:
+        serializedVersion: 2
+        x: 14355
+        y: 12
+        width: 1646
+        height: 1313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.343628, y: 83.50833}
+        - {x: -2.656372, y: 83.50833}
+        - {x: -6.656372, y: 79.50833}
+        - {x: -6.656372, y: 60.50833}
+        - {x: 4.343628, y: 38.50833}
+        - {x: 14.343628, y: 29.508331}
+        - {x: 30.343628, y: 25.508331}
+        - {x: 21.343628, y: 22.508331}
+        - {x: -30.656372, y: 25.508331}
+        - {x: -97.65637, y: 45.50833}
+        - {x: -103.65637, y: -11.491669}
+        - {x: -103.65637, y: -80.49167}
+        - {x: -102.65637, y: -82.49167}
+        - {x: -64.65637, y: -82.49167}
+        - {x: 81.34363, y: -33.49167}
+        - {x: 104.34363, y: 2.5083313}
+        - {x: 104.34363, y: 27.508331}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

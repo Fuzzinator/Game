@@ -1,0 +1,211 @@
+fileFormatVersion: 2
+guid: 20fdbdb7ba9953a46b3db87c67a8e563
+timeCreated: 1478578739
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Rabbit_Idle_SSpsd_0
+    21300002: Rabbit_Idle_SSpsd_1
+    21300004: Rabbit_Idle_SSpsd_2
+    21300006: Rabbit_Idle_SSpsd_3
+    21300008: Rabbit_Idle_SSpsd_4
+    21300010: Rabbit_Idle_SSpsd_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Rabbit_Idle_SSpsd_0
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 97
+        width: 1031
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 141.41113, y: -21.57129}
+        - {x: 141.41113, y: 7.428711}
+        - {x: 53.411133, y: 119.42871}
+        - {x: 15.411133, y: 119.42871}
+        - {x: -2.5888672, y: 29.42871}
+        - {x: -131.58887, y: 47.42871}
+        - {x: -140.58887, y: 30.42871}
+        - {x: -140.58887, y: -118.57129}
+        - {x: -51.588867, y: -118.57129}
+        - {x: -39.588867, y: -69.57129}
+        - {x: 18.411133, y: -118.57129}
+        - {x: 77.41113, y: -118.57129}
+    - name: Rabbit_Idle_SSpsd_1
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 97
+        width: 1031
+        height: 863
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -86.83594, y: -117.57129}
+        - {x: 52.164062, y: -117.57129}
+        - {x: 63.164062, y: -115.57129}
+        - {x: 65.16406, y: -104.57129}
+        - {x: 58.164062, y: -96.57129}
+        - {x: 85.16406, y: -48.57129}
+        - {x: 86.16406, y: -45.57129}
+        - {x: 127.16406, y: -39.57129}
+        - {x: 141.16406, y: -19.57129}
+        - {x: 141.16406, y: 7.428711}
+        - {x: 55.164062, y: 118.42871}
+        - {x: 18.164062, y: 118.42871}
+        - {x: 14.1640625, y: 106.42871}
+        - {x: -140.83594, y: 80.42871}
+        - {x: -140.83594, y: -117.57129}
+        - {x: -100.83594, y: -117.57129}
+        - {x: -98.83594, y: -115.57129}
+        - {x: -102.83594, y: -97.57129}
+        - {x: -94.83594, y: -112.57129}
+    - name: Rabbit_Idle_SSpsd_2
+      rect:
+        serializedVersion: 2
+        x: 2697
+        y: 97
+        width: 1038
+        height: 859
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 142.82715, y: -35.07129}
+        - {x: 142.82715, y: 20.92871}
+        - {x: 59.82715, y: 117.92871}
+        - {x: 24.827148, y: 117.92871}
+        - {x: 15.827148, y: 106.92871}
+        - {x: 20.827148, y: 22.92871}
+        - {x: -123.17285, y: 45.92871}
+        - {x: -141.17285, y: 29.92871}
+        - {x: -141.17285, y: -117.07129}
+        - {x: -81.17285, y: -117.07129}
+        - {x: -79.17285, y: -115.07129}
+        - {x: -45.17285, y: -114.07129}
+        - {x: -30.172852, y: -117.07129}
+        - {x: 82.82715, y: -117.07129}
+    - name: Rabbit_Idle_SSpsd_3
+      rect:
+        serializedVersion: 2
+        x: 3963
+        y: 97
+        width: 1030
+        height: 866
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.762695, y: -118.07129}
+        - {x: 26.762695, y: -118.07129}
+        - {x: 63.762695, y: -116.07129}
+        - {x: 66.762695, y: -103.07129}
+        - {x: 141.7627, y: -41.07129}
+        - {x: 141.7627, y: 41.92871}
+        - {x: 108.762695, y: 118.92871}
+        - {x: -49.237305, y: 118.92871}
+        - {x: -140.2373, y: 85.92871}
+        - {x: -140.2373, y: -118.07129}
+        - {x: -65.237305, y: -118.07129}
+        - {x: -51.237305, y: -112.07129}
+        - {x: -55.237305, y: -97.07129}
+        - {x: -64.237305, y: -92.07129}
+    - name: Rabbit_Idle_SSpsd_4
+      rect:
+        serializedVersion: 2
+        x: 5232
+        y: 97
+        width: 1034
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 56.015625, y: 119.92871}
+        - {x: 27.015625, y: 119.92871}
+        - {x: 11.015625, y: 106.92871}
+        - {x: -123.984375, y: 48.92871}
+        - {x: -131.98438, y: 13.928711}
+        - {x: -130.98438, y: -13.071289}
+        - {x: -140.98438, y: -45.07129}
+        - {x: -140.98438, y: -119.07129}
+        - {x: 109.015625, y: -119.07129}
+        - {x: 142.01562, y: -56.07129}
+        - {x: 142.01562, y: 19.92871}
+        - {x: 139.01562, y: 33.92871}
+    - name: Rabbit_Idle_SSpsd_5
+      rect:
+        serializedVersion: 2
+        x: 6409
+        y: 97
+        width: 1027
+        height: 877
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 140.70215, y: 15.428711}
+        - {x: 139.70215, y: 20.42871}
+        - {x: 54.70215, y: 120.42871}
+        - {x: -17.297852, y: 120.42871}
+        - {x: -58.29785, y: 44.42871}
+        - {x: -137.29785, y: 73.42871}
+        - {x: -140.29785, y: 64.42871}
+        - {x: -140.29785, y: -119.57129}
+        - {x: 70.70215, y: -119.57129}
+        - {x: 77.70215, y: -62.57129}
+        - {x: 140.70215, y: -25.57129}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

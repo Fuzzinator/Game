@@ -12,7 +12,9 @@ public class MovePlayer : MonoBehaviour {
     public GameObject MidAir_Down;
     public GameObject Idle;
     public GameObject Running;
-    public GameObject Hurt;
+    public GameObject HurtAir;
+    public GameObject HurtIdle;
+    public GameObject HurtRunning;
     public GameObject Blink;
 
     //assign location as a temp var to move character
@@ -32,7 +34,7 @@ public class MovePlayer : MonoBehaviour {
 
     public float idleTime;
 
-    public bool hurt = false;
+    public static bool hurt = false;
 
     public float hurtTime = 0.3f;
 
@@ -47,7 +49,10 @@ public class MovePlayer : MonoBehaviour {
             MidAir_Up.SetActive(false);
             MidAir_Down.SetActive(false);
             Running.SetActive(false);
-            Hurt.SetActive(false);
+            HurtAir.SetActive(false);
+            HurtIdle.SetActive(false);
+            HurtRunning.SetActive(false);
+            hurt = false;
     }
 
     //void Hurt_HareHandler()
@@ -161,10 +166,12 @@ public class MovePlayer : MonoBehaviour {
         {
             Idle.SetActive(false);
             Running.SetActive(false);
+            HurtIdle.SetActive(false);
+            HurtRunning.SetActive(false);
 
             if (hurt == false)
             {
-                Hurt.SetActive(false);
+                HurtAir.SetActive(false);
 
                 if (tempposition.y >= 1)
                 {
@@ -183,7 +190,7 @@ public class MovePlayer : MonoBehaviour {
                 MidAir_Down.SetActive(false);
                 Idle.SetActive(false);
                 Running.SetActive(false);
-                Hurt.SetActive(true);
+                HurtAir.SetActive(true);
                 //yield return new WaitForSeconds(3);
                 //hurt = false;
 
@@ -213,23 +220,27 @@ public class MovePlayer : MonoBehaviour {
         if (controller.isGrounded)
         {
             jumpCount = 0;
+            MidAir_Up.SetActive(false);
+            MidAir_Down.SetActive(false);
+            HurtAir.SetActive(false);
+
 
             if (hurt)
             {
-                MidAir_Up.SetActive(false);
-                MidAir_Down.SetActive(false);
+                
                 Idle.SetActive(false);
                 Running.SetActive(false);
-                Hurt.SetActive(true);
+                HurtIdle.SetActive(true);
             }
             else
             {
                 Idle.SetActive(true);
                 MidAir_Up.SetActive(false);
                 MidAir_Down.SetActive(false);
-                Hurt.SetActive(false);
+                HurtIdle.SetActive(false);
 
             }
+
 
         }
 
@@ -245,35 +256,75 @@ public class MovePlayer : MonoBehaviour {
 
         if (Input.GetAxis("Horizontal") > 0)
         {
-            if (controller.isGrounded)
+            if (controller.isGrounded && hurt != true)
             {
                 Idle.SetActive(false);
                 MidAir_Up.SetActive(false);
                 MidAir_Down.SetActive(false);
                 Running.SetActive(true);
+                HurtAir.SetActive(false);
+                HurtIdle.SetActive(false);
+                HurtRunning.SetActive(false);
+            }
+            else if (controller.isGrounded && hurt == true)
+            {
+                MidAir_Up.SetActive(false);
+                MidAir_Down.SetActive(false);
+                Idle.SetActive(false);
+                Running.SetActive(false);
+                HurtAir.SetActive(false);
+                HurtIdle.SetActive(false);
+                HurtRunning.SetActive(true);
             }
         }
 
         if (Input.GetAxis("Horizontal") < 0)
         {
-            if (controller.isGrounded)
+            if (controller.isGrounded && hurt != true)
             {
                 Idle.SetActive(false);
                 MidAir_Up.SetActive(false);
                 MidAir_Down.SetActive(false);
                 Running.SetActive(true);
+                HurtAir.SetActive(false);
+                HurtIdle.SetActive(false);
+                HurtRunning.SetActive(false);
+            }
+            else if (controller.isGrounded && hurt == true)
+            {
+                MidAir_Up.SetActive(false);
+                MidAir_Down.SetActive(false);
+                Idle.SetActive(false);
+                Running.SetActive(false);
+                HurtAir.SetActive(false);
+                HurtIdle.SetActive(false);
+                HurtRunning.SetActive(true);
             }
         }
 
 
         if (Input.GetAxis("Horizontal") == 0)
         {
-            if (controller.isGrounded)
+            HurtRunning.SetActive(false);
+            Running.SetActive(false);
+
+            if (controller.isGrounded&& hurt!=true)
             {
                 Idle.SetActive(true);
                 MidAir_Up.SetActive(false);
                 MidAir_Down.SetActive(false);
-                Running.SetActive(false);
+                
+                HurtAir.SetActive(false);
+                HurtIdle.SetActive(false);
+                //HurtRunning.SetActive(false);
+            }else if (controller.isGrounded && hurt == true)
+            {
+                MidAir_Up.SetActive(false);
+                MidAir_Down.SetActive(false);
+                Idle.SetActive(false);
+                
+                HurtAir.SetActive(false);
+                HurtIdle.SetActive(true);
             }
         }
 

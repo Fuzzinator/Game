@@ -15,6 +15,8 @@ public class HurtPlayer : MonoBehaviour {
         
         int temp = 50;
         damageCol.SetActive(false);
+        MovePlayer.hurt = true;
+        //DestroyStar.canCollect = false;
         print("Hurt Player");
         if (temp > 0)
         {
@@ -26,8 +28,11 @@ public class HurtPlayer : MonoBehaviour {
             temp--;
 
         }
+        
         yield return new WaitForSeconds(3);
         damageCol.SetActive(true);
+        MovePlayer.hurt = false;
+        //DestroyStar.canCollect = true;
     }
 
 	void OnTriggerEnter(Collider col)
