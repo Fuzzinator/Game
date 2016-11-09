@@ -13,6 +13,9 @@ public class SpawnWolf : MonoBehaviour
     public float offset = 30;
 
 
+    
+
+
     private int spawnYN;
     private int spawnMax = 10;
     private int spawnYes = 7;
@@ -21,7 +24,8 @@ public class SpawnWolf : MonoBehaviour
     Vector3 wolfVector3;
     Vector3 wolfArtVector;
 
-    private bool canSpawnWolf = true;
+    
+    public static bool canSpawnWolf = true;
     private bool mustRotate;
     private bool firstCall1;
     private bool firstCall2;
@@ -53,22 +57,25 @@ public class SpawnWolf : MonoBehaviour
             {
                 mustRotate = true;
                 firstCall2 = false;
-            }
-            
-            wolfVector3 = new Vector3((spawn2.position.x + (4*offset)), wolf.transform.position.y, wolf.transform.position.z);
-            wolf.transform.position = wolfVector3;
 
-            wolfArtVector = new Vector3(wolfArt.transform.position.x, spawn2.position.y, wolfArt.transform.position.z);
-            wolfArt.transform.position = wolfArtVector;
-            EnemyAgent.destination = spawn1;
-            offset /= 2;
-            //wolfSpawn = spawn2;
+            }
             if (mustRotate)
             {
                 wolfArt.transform.Rotate(0, 180, 0);
                 mustRotate = false;
+                firstCall1 = true;
             }
-            firstCall1 = true;
+
+            wolfVector3 = new Vector3((spawn2.position.x + (4*offset)), wolf.transform.position.y, wolf.transform.position.z);
+            wolf.transform.position = wolfVector3;
+
+            //wolfArtVector = new Vector3(wolfArt.transform.position.x, spawn2.position.y, wolfArt.transform.position.z);
+            //wolfArt.transform.position = wolfArtVector;
+            EnemyAgent.destination = spawn1;
+            offset /= 2;
+            //wolfSpawn = spawn2;
+
+            
 
         }
         else
@@ -78,41 +85,50 @@ public class SpawnWolf : MonoBehaviour
                 mustRotate = true;
                 firstCall1 = false;
             }
+            if (mustRotate)
+            {
+                wolfArt.transform.Rotate(0, 180, 0);
+                mustRotate = false;
+                firstCall2 = true;
+            }
 
             wolfVector3 = new Vector3((spawn1.position.x), wolf.transform.position.y, wolf.transform.position.z);
             wolf.transform.position = wolfVector3;
             EnemyAgent.destination = spawn2;
 
-            if(mustRotate)
-            {
-                wolfArt.transform.Rotate(0, 180, 0);
-                mustRotate = false;
-            }
+
+
+            firstCall2 = true;
 
         }
 
-        yield return new WaitForSeconds(10);
-        canSpawnWolf = true;
+        yield return new WaitForSeconds(1);
+        
 
 
         //StartCoroutine(StopWolfSpawn());
     }
 
-    void OnTriggerEnter(/*Collider col*/)
+    void OnTriggerEnter(Collider col)
     {
-        print("triggering");
-        spawnYN = Random.Range(0, spawnMax);
-        if (/*col.name == "Character"*/ /*spawnYN >= spawnYes &&*/ canSpawnWolf)
+        
+        if (col.name == "Character")
         {
-            canSpawnWolf = false;
-            //wolfDest =;
+            spawnYN = Random.Range(0, spawnMax);
+        
+            if (/*spawnYN >= spawnYes &&*/ canSpawnWolf)
+            {
+                canSpawnWolf = false;
+                //wolfDest =;
 
 
-            StartCoroutine(SpawnerWolf());
-            //StartCoroutine(StopWolfSpawn());
-            //yield return new WaitForSeconds(3);
 
-            print("Here comes the wolf");
+                StartCoroutine(SpawnerWolf());
+                //StartCoroutine(StopWolfSpawn());
+                //yield return new WaitForSeconds(3);
+
+                print("Here comes the wolf");
+            }
         }
     }
 }
