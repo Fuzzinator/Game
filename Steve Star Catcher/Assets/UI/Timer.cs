@@ -54,7 +54,7 @@ public class Timer : MonoBehaviour {
         //gameLight.intensity
         if (StaticVars.totalTime > 0)
         {
-            StaticVars.totalTime -= Time.deltaTime;
+           // StaticVars.totalTime -= Time.deltaTime;
         }
         else if(StaticVars.totalTime <= 0)
         {
