@@ -27,8 +27,8 @@ public class SpawnWolf : MonoBehaviour
     
     public static bool canSpawnWolf = true;
     private bool mustRotate;
-    private bool firstCall1;
-    private bool firstCall2;
+    //public bool firstCall1;
+    //public bool firstCall2;
 
     // Use this for initialization
     //IEnumerator StopWolfSpawn()
@@ -40,8 +40,9 @@ public class SpawnWolf : MonoBehaviour
 
         void Start()
     {
-        firstCall1 = false;
-        firstCall2 = true;
+        mustRotate = false;
+        StaticVars.firstCall1 = false;
+        StaticVars.firstCall2 = true;
     }
 
 
@@ -53,18 +54,21 @@ public class SpawnWolf : MonoBehaviour
 
         if (i <= 5)
         {
-            if(firstCall2)
+            if(StaticVars.firstCall2)
             {
-                mustRotate = true;
-                firstCall2 = false;
-
-            }
-            if (mustRotate)
-            {
+                //mustRotate = true;
+                StaticVars.firstCall2 = false;
                 wolfArt.transform.Rotate(0, 180, 0);
                 mustRotate = false;
-                firstCall1 = true;
+                StaticVars.firstCall1 = true;
+
             }
+            //if (mustRotate)
+            //{
+            //    wolfArt.transform.Rotate(0, 180, 0);
+            //    mustRotate = false;
+            //    firstCall1 = true;
+            //}
 
             wolfVector3 = new Vector3((spawn2.position.x + (4*offset)), wolf.transform.position.y, wolf.transform.position.z);
             wolf.transform.position = wolfVector3;
@@ -80,17 +84,20 @@ public class SpawnWolf : MonoBehaviour
         }
         else
         {
-            if(firstCall1)
+            if(StaticVars.firstCall1)
             {
-                mustRotate = true;
-                firstCall1 = false;
-            }
-            if (mustRotate)
-            {
+                //mustRotate = true;
+                StaticVars.firstCall1 = false;
                 wolfArt.transform.Rotate(0, 180, 0);
                 mustRotate = false;
-                firstCall2 = true;
+                StaticVars.firstCall2 = true;
             }
+            //if (mustRotate)
+            //{
+            //    wolfArt.transform.Rotate(0, 180, 0);
+            //    mustRotate = false;
+            //    firstCall2 = true;
+            //}
 
             wolfVector3 = new Vector3((spawn1.position.x), wolf.transform.position.y, wolf.transform.position.z);
             wolf.transform.position = wolfVector3;
@@ -98,7 +105,7 @@ public class SpawnWolf : MonoBehaviour
 
 
 
-            firstCall2 = true;
+            
 
         }
 

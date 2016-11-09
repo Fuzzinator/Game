@@ -9,4 +9,7 @@
 
     public static int playerScore = 0;
     public static float totalTime = 15;
+
+    public static bool firstCall1;
+    public static bool firstCall2;
 }
