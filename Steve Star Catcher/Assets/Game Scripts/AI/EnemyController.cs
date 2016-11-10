@@ -35,6 +35,7 @@ public class EnemyController : MonoBehaviour
         TurnWolf = TurnWolfHandler;
 
     }
+       
 
     // Update is called once per frame
     void Update()
@@ -70,16 +71,20 @@ public class EnemyController : MonoBehaviour
             }
             */
             //tempPOS = transform.position;
-            tempPOS.y -= gravity * Time.deltaTime;
-            // tempPOS.z = character.transform.position.z;
-            // if (this.transform.position.z != 
-            //     character.transform.position.z)
+            if(Wolf_Jump.canJump)
+            { 
+                tempPOS.y -= gravity * Time.deltaTime;
+                myCC.Move(tempPOS);
+            }
+                // tempPOS.z = character.transform.position.z;
+                // if (this.transform.position.z != 
+                //     character.transform.position.z)
 
-            //     transform.position = new Vector3
-            //         (this.transform.position.x, tempPOS.y, tempPOS.z);
-            //transform.position = tempPOS;
-            myCC.Move(tempPOS);
+                //     transform.position = new Vector3
+                //         (this.transform.position.x, tempPOS.y, tempPOS.z);
+                //transform.position = tempPOS;
 
-        }
+
+            }
     }
 }

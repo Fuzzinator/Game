@@ -123,7 +123,7 @@ public class SpawnWolf : MonoBehaviour
         {
             spawnYN = Random.Range(0, spawnMax);
         
-            if (/*spawnYN >= spawnYes &&*/ canSpawnWolf)
+            if (spawnYN >= spawnYes && canSpawnWolf)
             {
                 canSpawnWolf = false;
                 //wolfDest =;
@@ -132,9 +132,9 @@ public class SpawnWolf : MonoBehaviour
 
                 StartCoroutine(SpawnerWolf());
                 //StartCoroutine(StopWolfSpawn());
-                //yield return new WaitForSeconds(3);
+               
 
-                print("Here comes the wolf");
+                //print("Here comes the wolf");
             }
         }
     }

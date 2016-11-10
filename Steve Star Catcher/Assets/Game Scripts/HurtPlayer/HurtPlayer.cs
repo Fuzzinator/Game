@@ -8,7 +8,8 @@ public class HurtPlayer : MonoBehaviour {
     CharacterController cc;
     public float speed = -80;
     private Vector3 kickBack;
-    
+
+    public int cactusDamage = 5;    
 
     IEnumerator FrontBlowBack()
     {
@@ -17,7 +18,7 @@ public class HurtPlayer : MonoBehaviour {
         damageCol.SetActive(false);
         MovePlayer.hurt = true;
         //DestroyStar.canCollect = false;
-        print("Hurt Player");
+       
         if (temp > 0)
         {
             
@@ -35,18 +36,31 @@ public class HurtPlayer : MonoBehaviour {
         //DestroyStar.canCollect = true;
     }
 
+
+
 	void OnTriggerEnter(Collider col)
     {
 
-        if(col.name == "KnockBackFront")
+        if (col.name == "KnockBackFront")
         {
+
+            print(StaticVars.playerScore);
+            if (StaticVars.playerScore >= cactusDamage && MovePlayer.hurt == false)
+            {
+                //print("lose 5 stars");
+                StaticVars.playerScore -= cactusDamage; //TODO ADD IN POINT REDUCTION\
+                print(StaticVars.playerScore);
+            }
+            if (StaticVars.playerScore < cactusDamage && MovePlayer.hurt == false)
+            {
+                StaticVars.playerScore = 0;
+                print("lose " + StaticVars.playerScore + "stars");
+            }
+
             StartCoroutine(FrontBlowBack());
+
         }
 
     }
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

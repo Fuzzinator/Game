@@ -681,6 +681,7 @@ MonoBehaviour:
   hare: {fileID: 1421633035}
   damageCol: {fileID: 358126967}
   speed: -70
+  cactusDamage: 0
 --- !u!65 &149945553
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1887,7 +1888,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 15, y: 10, z: 1}
+  m_Size: {x: 5, y: 8, z: 1}
   m_Center: {x: 0.5, y: -2, z: 0}
 --- !u!1 &376968413
 GameObject:
@@ -2137,6 +2138,7 @@ MonoBehaviour:
   hare: {fileID: 1421633035}
   damageCol: {fileID: 358126967}
   speed: -70
+  cactusDamage: 0
 --- !u!65 &492056462
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4016,6 +4018,7 @@ MonoBehaviour:
   hare: {fileID: 1421633035}
   damageCol: {fileID: 358126967}
   speed: -70
+  cactusDamage: 0
 --- !u!65 &833538869
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4361,6 +4364,7 @@ MonoBehaviour:
   hare: {fileID: 1421633035}
   damageCol: {fileID: 358126967}
   speed: -70
+  cactusDamage: 0
 --- !u!65 &880520635
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4458,6 +4462,7 @@ MonoBehaviour:
   hare: {fileID: 1421633035}
   damageCol: {fileID: 358126967}
   speed: -70
+  cactusDamage: 0
 --- !u!65 &890297245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4916,6 +4921,46 @@ Transform:
   - {fileID: 2051211638}
   m_Father: {fileID: 684926549}
   m_RootOrder: 1
+--- !u!1 &985162271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 985162272}
+  - 65: {fileID: 985162273}
+  m_Layer: 16
+  m_Name: Hurt_Hare
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &985162272
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 985162271}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1167636371}
+  m_RootOrder: 0
+--- !u!65 &985162273
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 985162271}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 3.3, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1009133674 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: b3f0f24cd41cfdc47a053af078c3f40e, type: 3}
@@ -4992,6 +5037,62 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   offset: 0.4
+--- !u!1 &1022252666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1022252667}
+  - 65: {fileID: 1022252669}
+  - 114: {fileID: 1022252668}
+  m_Layer: 16
+  m_Name: Wolf_Jump
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1022252667
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1022252666}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1167636371}
+  m_RootOrder: 1
+--- !u!114 &1022252668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1022252666}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22f1b143d93aae4e8fe4cf7c0a76d0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCC: {fileID: 958577866}
+  tempPOS: {x: 0, y: 0, z: 0}
+  jumpForce: 100
+  rb: {fileID: 0}
+--- !u!65 &1022252669
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1022252666}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 10, z: 2}
+  m_Center: {x: 4, y: 7, z: 0}
 --- !u!1 &1040179031
 GameObject:
   m_ObjectHideFlags: 0
@@ -5391,7 +5492,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1142671241}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b73e73742b034a347bebff3b50b91c80, type: 3}
   m_Name: 
@@ -7135,7 +7236,7 @@ GameObject:
   - 4: {fileID: 1167636371}
   - 65: {fileID: 1167636372}
   - 65: {fileID: 1167636374}
-  - 65: {fileID: 1167636373}
+  - 54: {fileID: 1167636373}
   m_Layer: 16
   m_Name: Collision/Hare
   m_TagString: Untagged
@@ -7152,7 +7253,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 985162272}
+  - {fileID: 1022252667}
   m_Father: {fileID: 958577864}
   m_RootOrder: 0
 --- !u!65 &1167636372
@@ -7163,22 +7266,25 @@ BoxCollider:
   m_GameObject: {fileID: 1167636370}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 4, y: 3.3, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &1167636373
-BoxCollider:
+--- !u!54 &1167636373
+Rigidbody:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1167636370}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 18, y: 30, z: 1}
-  m_Center: {x: -9, y: 0, z: 0}
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &1167636374
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7186,11 +7292,11 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1167636370}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
+  m_IsTrigger: 0
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 30, z: 1}
-  m_Center: {x: 9, y: 0, z: 0}
+  m_Size: {x: 5, y: 10, z: 2}
+  m_Center: {x: 4, y: 7, z: 0}
 --- !u!1001 &1225982176
 Prefab:
   m_ObjectHideFlags: 0
@@ -7846,6 +7952,7 @@ MonoBehaviour:
   hare: {fileID: 1421633035}
   damageCol: {fileID: 358126967}
   speed: -70
+  cactusDamage: 0
 --- !u!65 &1340037542
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8049,6 +8156,21 @@ MonoBehaviour:
 GameObject:
   m_PrefabParentObject: {fileID: 170558, guid: 0c8e69ce748feb94a906afc827d43458, type: 2}
   m_PrefabInternal: {fileID: 1491680243}
+--- !u!114 &1421633036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1421633035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1904c6d69c247154494b2697de62a74e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hare: {fileID: 1421633035}
+  damageCol: {fileID: 358126967}
+  speed: -70
+  cactusDamage: 5
 --- !u!65 &1421633039
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8272,7 +8394,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 13665750, guid: 0c8e69ce748feb94a906afc827d43458, type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 13635460, guid: 0c8e69ce748feb94a906afc827d43458, type: 2}
       propertyPath: m_Enabled
@@ -11017,8 +11139,8 @@ GameObject:
   - 65: {fileID: 1988652843}
   - 65: {fileID: 1988652842}
   - 65: {fileID: 1988652841}
-  - 114: {fileID: 1988652840}
   - 54: {fileID: 1988652844}
+  - 114: {fileID: 1988652840}
   m_Layer: 16
   m_Name: Damage
   m_TagString: Untagged
@@ -11052,6 +11174,7 @@ MonoBehaviour:
   hare: {fileID: 1421633035}
   damageCol: {fileID: 358126967}
   speed: -70
+  cactusDamage: 0
 --- !u!65 &1988652841
 BoxCollider:
   m_ObjectHideFlags: 0
