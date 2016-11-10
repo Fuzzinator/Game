@@ -71,11 +71,11 @@ public class EnemyController : MonoBehaviour
             }
             */
             //tempPOS = transform.position;
-            if(Wolf_Jump.canJump)
-            { 
+            //if (Wolf_Jump.canJump == true)
+            //{ 
                 tempPOS.y -= gravity * Time.deltaTime;
                 myCC.Move(tempPOS);
-            }
+            //}
                 // tempPOS.z = character.transform.position.z;
                 // if (this.transform.position.z != 
                 //     character.transform.position.z)
