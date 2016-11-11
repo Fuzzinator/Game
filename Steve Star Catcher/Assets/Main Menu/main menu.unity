@@ -279,6 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 633f665683aa16443b450af648a7744f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 229618740}
 --- !u!114 &229618740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -632,6 +633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed29e8af23fd4d4e967d5a0abbab137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 695092656}
 --- !u!114 &695092656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -670,7 +672,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 695092657}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 695092655}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &695092657
@@ -1055,6 +1068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e61307c0affe8754b87917ec307a027d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 1104979028}
 --- !u!114 &1104979028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1337,7 +1351,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1566654553
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1441,6 +1455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cdaad135c7f13042ab813c6ae555e53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 1603126955}
 --- !u!114 &1603126955
 MonoBehaviour:
   m_ObjectHideFlags: 0
