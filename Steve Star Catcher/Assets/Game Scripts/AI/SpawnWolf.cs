@@ -17,15 +17,15 @@ public class SpawnWolf : MonoBehaviour
 
 
     private int spawnYN;
-    private int spawnMax = 10;
-    private int spawnYes = 7;
+    //private int spawnMax = 10;
+    //private int spawnYes = 7;
 
     //Vector3 hareVector3;
     Vector3 wolfVector3;
     Vector3 wolfArtVector;
 
     
-    public static bool canSpawnWolf = true;
+    //public static bool canSpawnWolf = true;
     private bool mustRotate;
     //public bool firstCall1;
     //public bool firstCall2;
@@ -121,11 +121,11 @@ public class SpawnWolf : MonoBehaviour
         
         if (col.name == "Character")
         {
-            spawnYN = Random.Range(0, spawnMax);
+            spawnYN = Random.Range(0, DifficultyStaticVars.wolfFrequency);
         
-            if (spawnYN >= spawnYes && canSpawnWolf)
+            if (spawnYN >= DifficultyStaticVars.wolfSpawnYes && DifficultyStaticVars.wolfCanSpawn)
             {
-                canSpawnWolf = false;
+                DifficultyStaticVars.wolfCanSpawn = false;
                 //wolfDest =;
 
 

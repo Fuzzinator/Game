@@ -9,7 +9,7 @@ public class HurtPlayer : MonoBehaviour {
     public float speed = -80;
     private Vector3 kickBack;
 
-    public int cactusDamage = 5;    
+    //public int cactusDamage = 5;    
 
     IEnumerator FrontBlowBack()
     {
@@ -30,7 +30,7 @@ public class HurtPlayer : MonoBehaviour {
 
         }
         
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(DifficultyStaticVars.hurtTime);
         damageCol.SetActive(true);
         MovePlayer.hurt = false;
         //DestroyStar.canCollect = true;
@@ -45,13 +45,13 @@ public class HurtPlayer : MonoBehaviour {
         {
 
             print(StaticVars.playerScore);
-            if (StaticVars.playerScore >= cactusDamage && MovePlayer.hurt == false)
+            if (StaticVars.playerScore >= DifficultyStaticVars.cactusDamage && MovePlayer.hurt == false)
             {
                 //print("lose 5 stars");
-                StaticVars.playerScore -= cactusDamage; //TODO ADD IN POINT REDUCTION\
+                StaticVars.playerScore -= (int)DifficultyStaticVars.cactusDamage; //TODO ADD IN POINT REDUCTION\
                 print(StaticVars.playerScore);
             }
-            if (StaticVars.playerScore < cactusDamage && MovePlayer.hurt == false)
+            if (StaticVars.playerScore < DifficultyStaticVars.cactusDamage && MovePlayer.hurt == false)
             {
                 StaticVars.playerScore = 0;
                 print("lose " + StaticVars.playerScore + "stars");

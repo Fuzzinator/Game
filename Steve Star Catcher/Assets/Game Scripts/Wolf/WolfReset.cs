@@ -19,7 +19,7 @@ public class WolfReset : MonoBehaviour {
         reset = new Vector3(resetSpot.position.x, resetSpot.position.y, resetSpot.position.z);
         wolfAgent.position = reset;
         wolfObj.position = reset;
-        SpawnWolf.canSpawnWolf = true;
+        DifficultyStaticVars.wolfCanSpawn = true;
     }
 	
 }

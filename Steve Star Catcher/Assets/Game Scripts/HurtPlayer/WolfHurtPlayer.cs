@@ -30,7 +30,7 @@ public class WolfHurtPlayer : MonoBehaviour {
 
         }
         
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(DifficultyStaticVars.hurtTime);
         damageCol.SetActive(true);
         MovePlayer.hurt = false;
         //DestroyStar.canCollect = true;
@@ -43,7 +43,7 @@ public class WolfHurtPlayer : MonoBehaviour {
 
         if (col.name == "KnockBackFront")
         {
-            StaticVars.playerScore = 0;
+            StaticVars.playerScore -= DifficultyStaticVars.wolfDamage;
 
             //print(StaticVars.playerScore);
             //if (StaticVars.playerScore >= wolfDamage && MovePlayer.hurt == false)

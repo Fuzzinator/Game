@@ -28,9 +28,12 @@ public class Timer : MonoBehaviour {
     void Start ()
     {
         secsToMin = 60;
-        StaticVars.totalTime = 15;
-        seconds = (int)(StaticVars.totalTime % secsToMin);
-        minutes = (int)(StaticVars.totalTime / secsToMin);
+        
+        seconds = (int)(DifficultyStaticVars.startTime % secsToMin);
+        minutes = (int)(DifficultyStaticVars.startTime / secsToMin);
+        //StaticVars.totalTime = 15;
+        //seconds = (int)(StaticVars.totalTime % secsToMin);
+        //minutes = (int)(StaticVars.totalTime / secsToMin);
         time = minutes + ":" + seconds;
     }
 
@@ -52,18 +55,18 @@ public class Timer : MonoBehaviour {
 	void Update ()
     {
         //gameLight.intensity
-        if (StaticVars.totalTime > 0)
+        if (DifficultyStaticVars.startTime > 0)
         {
-            StaticVars.totalTime -= Time.deltaTime;
+            DifficultyStaticVars.startTime -= Time.deltaTime;
         }
-        else if(StaticVars.totalTime <= 0)
+        else if(DifficultyStaticVars.startTime <= 0)
         {
             print("Time's Up!");
             SceneManager.LoadScene(2);
         }
 
-        seconds = (int)(StaticVars.totalTime % secsToMin);
-        minutes = (int)(StaticVars.totalTime / secsToMin);
+        seconds = (int)(DifficultyStaticVars.startTime % secsToMin);
+        minutes = (int)(DifficultyStaticVars.startTime / secsToMin);
 
         checkTime();
         //time = "" + (int)totalTime;

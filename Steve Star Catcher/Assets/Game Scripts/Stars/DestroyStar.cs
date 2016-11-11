@@ -87,21 +87,21 @@ public class DestroyStar : MonoBehaviour {
             if (starColor.name == "White_Star")
             {
                 ++StaticVars.playerScore;
-                StaticVars.totalTime += whiteIncrease;
+                DifficultyStaticVars.startTime += whiteIncrease;
             }else if(starColor.name == "Red_Star")
             {
                 StaticVars.playerScore += redIncrease;
-                StaticVars.totalTime += redIncrease;
+                DifficultyStaticVars.startTime += redIncrease;
             }
             else if (starColor.name == "Blue_Star")
             {
                 StaticVars.playerScore += blueIncrease;
-                StaticVars.totalTime += blueIncrease;
+                DifficultyStaticVars.startTime += blueIncrease;
             }
             else if (starColor.name == "Green_Star")
             {
                 StaticVars.playerScore += greenIncrease;
-                StaticVars.totalTime += greenIncrease;
+                DifficultyStaticVars.startTime += greenIncrease;
             }
             //gameObject.SetActive(false);
             Destroy(gameObject/*, endTime*/);

@@ -7,7 +7,7 @@ public class CameraController : MonoBehaviour {
     //private Vector3 offset;
 
     
-       public float offset = .5f;
+       //public float offset = .5f;
     
     
     
@@ -29,7 +29,7 @@ public class CameraController : MonoBehaviour {
 
       
        transform.position = new Vector3
-            ((this.gameObject.transform.position.x + Time.deltaTime/offset), this.gameObject.transform.position.y, this.gameObject.transform.position.z);
+            ((this.gameObject.transform.position.x + Time.deltaTime/DifficultyStaticVars.cameraSpeed), this.gameObject.transform.position.y, this.gameObject.transform.position.z);
 
             
             //player.transform.position + offset;

@@ -7,10 +7,27 @@ public class ParalaxingBackground : MonoBehaviour
     public GameObject player;
     //private Vector3 offset;
 
+    private GameObject whichBack;
 
-    public float offset = .2f;
 
+    private float offset; //= .2f;
 
+    void Start()
+    {
+        if(whichBack.name == "Far_Back")
+        {
+            offset = DifficultyStaticVars.farBackSpeed;
+        }
+        if (whichBack.name == "Med_Back")
+        {
+            offset = DifficultyStaticVars.medBackSpeed;
+        }
+        if (whichBack.name == "Cls_Back")
+        {
+            offset = DifficultyStaticVars.clsBackSpeed;
+        }
+
+    }
 
 
     
@@ -19,7 +36,7 @@ public class ParalaxingBackground : MonoBehaviour
     void LateUpdate()
     {
 
-
+        
 
 
         transform.position = new Vector3
