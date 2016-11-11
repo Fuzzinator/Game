@@ -17,7 +17,7 @@ public class MedBttn : MonoBehaviour
     void TaskOnClick()
     {
 
-        DifficultyStaticVars.cameraSpeed = 0.6f;
+        DifficultyStaticVars.cameraSpeed = 0.3f;
         DifficultyStaticVars.farBackSpeed = .45f;
         DifficultyStaticVars.medBackSpeed = .50f;
         DifficultyStaticVars.clsBackSpeed = .55f;

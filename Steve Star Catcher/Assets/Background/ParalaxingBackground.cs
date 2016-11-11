@@ -7,7 +7,7 @@ public class ParalaxingBackground : MonoBehaviour
     public GameObject player;
     //private Vector3 offset;
 
-    private GameObject whichBack;
+    public GameObject whichBack;
 
 
     private float offset; //= .2f;

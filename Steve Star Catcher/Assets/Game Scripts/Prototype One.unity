@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.35
+  whichBack: {fileID: 0}
 --- !u!212 &10279492
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.4
+  whichBack: {fileID: 0}
 --- !u!212 &95374353
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -681,7 +681,6 @@ MonoBehaviour:
   hare: {fileID: 1421633035}
   damageCol: {fileID: 358126967}
   speed: -70
-  cactusDamage: 0
 --- !u!65 &149945553
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1008,7 +1007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.35
+  whichBack: {fileID: 0}
 --- !u!212 &202389365
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1777,7 +1776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.7
+  whichBack: {fileID: 0}
 --- !u!65 &352559728
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2138,7 +2137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.45
+  whichBack: {fileID: 0}
 --- !u!212 &395395376
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2230,7 +2229,6 @@ MonoBehaviour:
   hare: {fileID: 1421633035}
   damageCol: {fileID: 358126967}
   speed: -70
-  cactusDamage: 0
 --- !u!65 &492056462
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2501,7 +2499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.35
+  whichBack: {fileID: 0}
 --- !u!212 &546717912
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2573,7 +2571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.45
+  whichBack: {fileID: 0}
 --- !u!212 &547095871
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2734,7 +2732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.35
+  whichBack: {fileID: 587923229}
 --- !u!1 &601710641
 GameObject:
   m_ObjectHideFlags: 0
@@ -2977,7 +2975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.4
+  whichBack: {fileID: 0}
 --- !u!1 &621452279
 GameObject:
   m_ObjectHideFlags: 0
@@ -3516,7 +3514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.4
+  whichBack: {fileID: 0}
 --- !u!212 &758783071
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3843,7 +3841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.45
+  whichBack: {fileID: 0}
 --- !u!212 &794508642
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4110,7 +4108,6 @@ MonoBehaviour:
   hare: {fileID: 1421633035}
   damageCol: {fileID: 358126967}
   speed: -70
-  cactusDamage: 0
 --- !u!65 &833538869
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4456,7 +4453,6 @@ MonoBehaviour:
   hare: {fileID: 1421633035}
   damageCol: {fileID: 358126967}
   speed: -70
-  cactusDamage: 0
 --- !u!65 &880520635
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4554,7 +4550,6 @@ MonoBehaviour:
   hare: {fileID: 1421633035}
   damageCol: {fileID: 358126967}
   speed: -70
-  cactusDamage: 0
 --- !u!65 &890297245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4648,7 +4643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.4
+  whichBack: {fileID: 0}
 --- !u!212 &926809952
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4710,7 +4705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.7
+  whichBack: {fileID: 0}
 --- !u!65 &934711722
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5143,7 +5138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.4
+  whichBack: {fileID: 0}
 --- !u!1 &1022252666
 GameObject:
   m_ObjectHideFlags: 0
@@ -5605,7 +5600,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 147795742}
-  offset: 0.3
 --- !u!114 &1142671248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7680,7 +7674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.4
+  whichBack: {fileID: 0}
 --- !u!212 &1276385957
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7877,7 +7871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.45
+  whichBack: {fileID: 1322832713}
 --- !u!1 &1324035435
 GameObject:
   m_ObjectHideFlags: 0
@@ -8145,7 +8139,6 @@ MonoBehaviour:
   hare: {fileID: 1421633035}
   damageCol: {fileID: 358126967}
   speed: -70
-  cactusDamage: 0
 --- !u!65 &1340037542
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8363,7 +8356,6 @@ MonoBehaviour:
   hare: {fileID: 1421633035}
   damageCol: {fileID: 358126967}
   speed: -70
-  cactusDamage: 5
 --- !u!65 &1421633039
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8791,7 +8783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.35
+  whichBack: {fileID: 0}
 --- !u!212 &1543332798
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8895,7 +8887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.35
+  whichBack: {fileID: 0}
 --- !u!114 &1556148181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9090,7 +9082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.35
+  whichBack: {fileID: 0}
 --- !u!1 &1620870145
 GameObject:
   m_ObjectHideFlags: 0
@@ -9134,7 +9126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.35
+  whichBack: {fileID: 0}
 --- !u!212 &1620870148
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9341,7 +9333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.4
+  whichBack: {fileID: 1646018670}
 --- !u!1 &1656110064
 GameObject:
   m_ObjectHideFlags: 0
@@ -9410,7 +9402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.35
+  whichBack: {fileID: 1656110064}
 --- !u!1 &1666560497
 GameObject:
   m_ObjectHideFlags: 0
@@ -9632,7 +9624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.4
+  whichBack: {fileID: 0}
 --- !u!212 &1695937702
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9734,7 +9726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.45
+  whichBack: {fileID: 0}
 --- !u!1 &1716693626
 GameObject:
   m_ObjectHideFlags: 0
@@ -10067,7 +10059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.45
+  whichBack: {fileID: 0}
 --- !u!212 &1757496425
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10256,7 +10248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.4
+  whichBack: {fileID: 1779729831}
 --- !u!1 &1780661550
 GameObject:
   m_ObjectHideFlags: 0
@@ -10325,7 +10317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.45
+  whichBack: {fileID: 0}
 --- !u!1 &1795442993
 GameObject:
   m_ObjectHideFlags: 0
@@ -11390,7 +11382,6 @@ MonoBehaviour:
   hare: {fileID: 1421633035}
   damageCol: {fileID: 358126967}
   speed: -70
-  cactusDamage: 0
 --- !u!65 &1988652841
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11652,7 +11643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.45
+  whichBack: {fileID: 2051211637}
 --- !u!1 &2059398837
 GameObject:
   m_ObjectHideFlags: 0
@@ -11953,7 +11944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  offset: 0.45
+  whichBack: {fileID: 0}
 --- !u!212 &2145352388
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour {
 
 
         // offset = player.transform.position;
-        print(DifficultyStaticVars.cameraSpeed);
+        //print(DifficultyStaticVars.cameraSpeed);
 
 
     }

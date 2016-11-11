@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Game Scripts/Prototype One.unity
+- path: Assets/Main Menu/main menu.unity
   isLoaded: 1
   isActive: 1
