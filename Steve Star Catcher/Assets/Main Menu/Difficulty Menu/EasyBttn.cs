@@ -17,7 +17,7 @@ public class EasyBttn : MonoBehaviour
     void TaskOnClick()
     {
 
-        DifficultyStaticVars.cameraSpeed = 0.75f;
+        DifficultyStaticVars.cameraSpeed = 0.5f;
         DifficultyStaticVars.farBackSpeed = .55f;
         DifficultyStaticVars.medBackSpeed = .60f;
         DifficultyStaticVars.clsBackSpeed = .65f;
@@ -29,6 +29,7 @@ public class EasyBttn : MonoBehaviour
         DifficultyStaticVars.wolfSpawnYes = 1;
         //DifficultyStaticVars.wolfJump;
         DifficultyStaticVars.wolfCanSpawn = false;
+        DifficultyStaticVars.difficulty = "Easy";
         SceneManager.LoadScene(1);
     }
 }

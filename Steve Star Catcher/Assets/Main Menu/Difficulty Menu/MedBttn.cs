@@ -18,7 +18,7 @@ public class MedBttn : MonoBehaviour
     void TaskOnClick()
     {
 
-        DifficultyStaticVars.cameraSpeed = 0.3f;
+        DifficultyStaticVars.cameraSpeed = 0.4f;
         DifficultyStaticVars.farBackSpeed = .45f;
         DifficultyStaticVars.medBackSpeed = .50f;
         DifficultyStaticVars.clsBackSpeed = .55f;
@@ -30,6 +30,7 @@ public class MedBttn : MonoBehaviour
         DifficultyStaticVars.wolfSpawnYes = 9;
         //DifficultyStaticVars.wolfJump;
         DifficultyStaticVars.wolfCanSpawn = true;
+        DifficultyStaticVars.difficulty = "Medium";
         SceneManager.LoadScene(1);
     }
 }

@@ -17,9 +17,9 @@ public class HardBttn : MonoBehaviour {
     {
 
         DifficultyStaticVars.cameraSpeed = 0.3f;
-        DifficultyStaticVars.farBackSpeed = -.15f;
-        DifficultyStaticVars.medBackSpeed = -.20f;
-        DifficultyStaticVars.clsBackSpeed = -.25f;
+        DifficultyStaticVars.farBackSpeed = .35f;
+        DifficultyStaticVars.medBackSpeed = .40f;
+        DifficultyStaticVars.clsBackSpeed = .45f;
         DifficultyStaticVars.startTime = 15;
         DifficultyStaticVars.wolfDamage = StaticVars.playerScore;
         DifficultyStaticVars.cactusDamage = 5;
@@ -28,6 +28,7 @@ public class HardBttn : MonoBehaviour {
         DifficultyStaticVars.wolfSpawnYes = 7;
         //DifficultyStaticVars.wolfJump;
         DifficultyStaticVars.wolfCanSpawn = true;
+        DifficultyStaticVars.difficulty = "Hard";
         SceneManager.LoadScene(1);
     }
 }

@@ -29,6 +29,7 @@ public class PracticeBttn : MonoBehaviour
         DifficultyStaticVars.wolfSpawnYes = 1;
         //DifficultyStaticVars.wolfJump;
         DifficultyStaticVars.wolfCanSpawn = false;
+        DifficultyStaticVars.difficulty = "Practice";
         SceneManager.LoadScene(1);
     }
 }

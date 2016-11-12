@@ -12,4 +12,5 @@
     public static float wolfSpawnYes;
     public static bool wolfJump;
     public static bool wolfCanSpawn;
+    public static string difficulty;
 }
