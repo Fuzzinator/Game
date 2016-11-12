@@ -2,15 +2,16 @@
 using System.Collections;
 using System;
 
-public class UserInputs : MonoBehaviour {
+public class UserInputs : MonoBehaviour
+{
 
     public static Action<KeyCode> UserInput;
 
     // Update is called once per frame
     void Update()
     {
-       
-       
+
+
         if (Input.GetKeyDown(KeyCode.RightArrow) && UserInput != null)
         {
             UserInput(KeyCode.RightArrow);
@@ -24,5 +25,17 @@ public class UserInputs : MonoBehaviour {
             UserInput(KeyCode.Space);
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (Time.timeScale == 1)
+            {
+                Time.timeScale = 0;
+            }
+            else
+            {
+                Time.timeScale = 1;
+            }
+
+        }
     }
 }
