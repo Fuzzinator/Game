@@ -12,13 +12,14 @@ public class StartGame : MonoBehaviour {
 
     void Start()
     {
+        
         Button btn = startButton.GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
     }
 
     void TaskOnClick()
     {
- 
+            
             Game_Playables[0].SetActive(true);
             Game_Playables[1].SetActive(true);
             Game_Playables[2].SetActive(true);

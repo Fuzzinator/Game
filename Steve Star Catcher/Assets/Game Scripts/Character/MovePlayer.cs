@@ -96,6 +96,7 @@ public class MovePlayer : MonoBehaviour {
     {
         controller = GetComponent<CharacterController>();
         Idle_Hare = Idle_HareHandler;
+        hurt = false;
         
         
 

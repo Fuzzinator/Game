@@ -15,6 +15,7 @@ public class PlayButton : MonoBehaviour {
 
     void TaskOnClick()
     {
+
         SceneManager.LoadScene(1);
     }
 }

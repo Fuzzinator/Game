@@ -4,7 +4,7 @@ using System;
 
 public class UserInputs : MonoBehaviour
 {
-
+    public GameObject pauseScreen;
     public static Action<KeyCode> UserInput;
 
     // Update is called once per frame
@@ -29,10 +29,12 @@ public class UserInputs : MonoBehaviour
         {
             if (Time.timeScale == 1)
             {
+                pauseScreen.SetActive(true);
                 Time.timeScale = 0;
             }
             else
             {
+                pauseScreen.SetActive(false);
                 Time.timeScale = 1;
             }
 
