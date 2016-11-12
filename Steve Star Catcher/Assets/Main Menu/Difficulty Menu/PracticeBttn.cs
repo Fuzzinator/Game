@@ -18,9 +18,9 @@ public class PracticeBttn : MonoBehaviour
     {
 
         DifficultyStaticVars.cameraSpeed = 1f;
-        DifficultyStaticVars.farBackSpeed = .7f;
-        DifficultyStaticVars.medBackSpeed = .8f;
-        DifficultyStaticVars.clsBackSpeed = .9f;
+        DifficultyStaticVars.farBackSpeed = 1.05f;
+        DifficultyStaticVars.medBackSpeed = 1.1f;
+        DifficultyStaticVars.clsBackSpeed = 1.15f;
         DifficultyStaticVars.startTime = 180;
         DifficultyStaticVars.wolfDamage = 0;
         DifficultyStaticVars.cactusDamage = 0;

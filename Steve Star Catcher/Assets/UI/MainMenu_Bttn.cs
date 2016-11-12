@@ -9,8 +9,10 @@ public class MainMenu_Bttn : MonoBehaviour {
 
     void Start()
     {
+
         Button btn = startButton.GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
+        Time.timeScale = 0;
     }
 
     void TaskOnClick()
