@@ -12,28 +12,32 @@ public class StartGame : MonoBehaviour {
 
     void Start()
     {
-        
+        Time.timeScale = 0;
         Button btn = startButton.GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
     }
 
     void TaskOnClick()
     {
-            
-            Game_Playables[0].SetActive(true);
-            Game_Playables[1].SetActive(true);
-            Game_Playables[2].SetActive(true);
-            Game_Playables[3].SetActive(true);
-            Game_Playables[4].SetActive(true);
-            Game_Playables[5].SetActive(true);
-            Game_Playables[6].SetActive(true);
-            Game_Playables[7].SetActive(true);
-            Game_Playables[8].SetActive(true);
-            Game_Playables[9].SetActive(true);
-        
-            Turn_Off[0].SetActive(false);
-            Turn_Off[1].SetActive(false);
-            Turn_Off[2].SetActive(false);
+
+        Time.timeScale = 1;
+        //Game_Playables[0].SetActive(true);
+        //Game_Playables[1].SetActive(true);
+        //Game_Playables[2].SetActive(true);
+        //Game_Playables[3].SetActive(true);
+        //Game_Playables[4].SetActive(true);
+        //Game_Playables[5].SetActive(true);
+        //Game_Playables[6].SetActive(true);
+        //Game_Playables[7].SetActive(true);
+        //Game_Playables[8].SetActive(true);
+        //Game_Playables[9].SetActive(true);
+
+
+
+        Turn_Off[0].SetActive(false);
+            //Turn_Off[1].SetActive(false);
+            //Turn_Off[2].SetActive(false);
+
 
     }
 

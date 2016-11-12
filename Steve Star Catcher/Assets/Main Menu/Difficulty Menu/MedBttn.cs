@@ -12,6 +12,7 @@ public class MedBttn : MonoBehaviour
     {
         Button btn = button.GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
+
     }
 
     void TaskOnClick()
