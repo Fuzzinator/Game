@@ -12,7 +12,7 @@ public class StartGame : MonoBehaviour {
 
     void Start()
     {
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
         Button btn = startButton.GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
     }

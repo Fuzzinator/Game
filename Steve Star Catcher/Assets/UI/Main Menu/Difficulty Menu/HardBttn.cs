@@ -20,7 +20,7 @@ public class HardBttn : MonoBehaviour {
         DifficultyStaticVars.farBackSpeed = .35f;
         DifficultyStaticVars.medBackSpeed = .40f;
         DifficultyStaticVars.clsBackSpeed = .45f;
-        DifficultyStaticVars.startTime = 15;
+        DifficultyStaticVars.startTime = 105;
         DifficultyStaticVars.wolfDamage = StaticVars.playerScore;
         DifficultyStaticVars.cactusDamage = 5;
         DifficultyStaticVars.hurtTime = 3;
