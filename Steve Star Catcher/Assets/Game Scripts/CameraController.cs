@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour {
 
@@ -24,8 +25,6 @@ public class CameraController : MonoBehaviour {
 
     // Update is called once per frame
     void LateUpdate () {
-
-        StaticVars.totalTime += 1 * Time.deltaTime;
 
       
        transform.position = new Vector3
