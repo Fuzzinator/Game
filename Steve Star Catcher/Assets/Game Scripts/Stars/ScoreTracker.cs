@@ -11,10 +11,10 @@ public class ScoreTracker : MonoBehaviour {
     }
 
 	
-	// Update is called once per frame
-	void Update () {
+	//// Update is called once per frame
+	//void Update () {
 
 
-        print(StaticVars.totalTime);
-	}
+ //       print(StaticVars.totalTime);
+	//}
 }
