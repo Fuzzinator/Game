@@ -25,7 +25,7 @@ public class CameraController : MonoBehaviour {
     // Update is called once per frame
     void LateUpdate () {
 
-
+        StaticVars.totalTime += 1 * Time.deltaTime;
 
       
        transform.position = new Vector3
