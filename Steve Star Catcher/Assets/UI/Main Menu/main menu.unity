@@ -3443,8 +3443,8 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 196, y: 27}
+  m_AnchoredPosition: {x: 0, y: -5.6}
+  m_SizeDelta: {x: 196, y: 38.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1638539892
 MonoBehaviour:
@@ -3478,7 +3478,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kirt Hullinger
+  m_Text: 'Kirt Hullinger
+
+    Kirsti Motter'
 --- !u!222 &1638539893
 CanvasRenderer:
   m_ObjectHideFlags: 0
