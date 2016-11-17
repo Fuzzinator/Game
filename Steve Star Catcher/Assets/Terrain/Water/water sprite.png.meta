@@ -1,0 +1,217 @@
+fileFormatVersion: 2
+guid: 28495c21a92fa4845921d5e176c13e61
+timeCreated: 1479401786
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: water sprite_0
+    21300002: water sprite_1
+    21300004: water sprite_2
+    21300006: water sprite_3
+    21300008: water sprite_4
+    21300010: water sprite_5
+    21300012: water sprite_6
+    21300014: water sprite_7
+    21300016: water sprite_8
+    21300018: water sprite_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: water sprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1266
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.5, y: 57.5}
+        - {x: -101.5, y: -57.5}
+        - {x: 101.5, y: -57.5}
+        - {x: 101.5, y: 57.5}
+    - name: water sprite_1
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 0
+        width: 1256
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100.298615, y: 57.5}
+        - {x: -100.298615, y: -57.5}
+        - {x: 100.701385, y: -57.5}
+        - {x: 100.701385, y: 57.5}
+    - name: water sprite_2
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 0
+        width: 1256
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100.236115, y: 57.5}
+        - {x: -100.236115, y: -57.5}
+        - {x: 101.763885, y: -57.5}
+        - {x: 101.763885, y: 57.5}
+    - name: water sprite_3
+      rect:
+        serializedVersion: 2
+        x: 3847
+        y: 0
+        width: 1262
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.048584, y: 57.5}
+        - {x: -101.048584, y: -57.5}
+        - {x: 101.951416, y: -57.5}
+        - {x: 101.951416, y: 57.5}
+    - name: water sprite_4
+      rect:
+        serializedVersion: 2
+        x: 5128
+        y: 0
+        width: 1263
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100.94446, y: 57.5}
+        - {x: -100.94446, y: -57.5}
+        - {x: 101.05554, y: -57.5}
+        - {x: 101.05554, y: 57.5}
+    - name: water sprite_5
+      rect:
+        serializedVersion: 2
+        x: 6416
+        y: 0
+        width: 1250
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -98.72217, y: 57.5}
+        - {x: -98.72217, y: -57.5}
+        - {x: 101.27783, y: -57.5}
+        - {x: 101.27783, y: 57.5}
+    - name: water sprite_6
+      rect:
+        serializedVersion: 2
+        x: 7691
+        y: 0
+        width: 1250
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -99.076416, y: 57.5}
+        - {x: -99.076416, y: -57.5}
+        - {x: 100.923584, y: -57.5}
+        - {x: 100.923584, y: 57.5}
+    - name: water sprite_7
+      rect:
+        serializedVersion: 2
+        x: 8978
+        y: 0
+        width: 1244
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -97.013916, y: 57.5}
+        - {x: -97.013916, y: -57.5}
+        - {x: 100.986084, y: -57.5}
+        - {x: 100.986084, y: 57.5}
+    - name: water sprite_8
+      rect:
+        serializedVersion: 2
+        x: 10259
+        y: 0
+        width: 1238
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96.90967, y: 57.5}
+        - {x: -96.90967, y: -57.5}
+        - {x: 100.09033, y: -57.5}
+        - {x: 100.09033, y: 57.5}
+    - name: water sprite_9
+      rect:
+        serializedVersion: 2
+        x: 11547
+        y: 0
+        width: 1253
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -98.1875, y: 57.5}
+        - {x: -98.1875, y: -57.5}
+        - {x: 100.8125, y: -57.5}
+        - {x: 100.8125, y: 57.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
