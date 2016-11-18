@@ -12,4 +12,6 @@
 
     public static bool firstCall1;
     public static bool firstCall2;
+
+    public static bool firstRun = true;
 }
