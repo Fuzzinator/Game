@@ -30,6 +30,6 @@ public class EasyBttn : MonoBehaviour
         //DifficultyStaticVars.wolfJump;
         DifficultyStaticVars.wolfCanSpawn = false;
         DifficultyStaticVars.difficulty = "Easy";
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(5);
     }
 }

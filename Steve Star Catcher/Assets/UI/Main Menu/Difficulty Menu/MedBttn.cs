@@ -31,6 +31,6 @@ public class MedBttn : MonoBehaviour
         //DifficultyStaticVars.wolfJump;
         DifficultyStaticVars.wolfCanSpawn = true;
         DifficultyStaticVars.difficulty = "Medium";
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(5);
     }
 }

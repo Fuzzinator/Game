@@ -676,6 +676,19 @@ RectTransform:
 GameObject:
   m_PrefabParentObject: {fileID: 149468, guid: 38f5f7fa8b6111143851e0682ed197b8, type: 2}
   m_PrefabInternal: {fileID: 1117739231}
+--- !u!114 &342564537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 342564536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eadadd22cd98e904088a368d6da8d115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fade: {fileID: 342564536}
+  canvas: {fileID: 1441968314}
 --- !u!1 &394796347
 GameObject:
   m_ObjectHideFlags: 0
@@ -2227,19 +2240,20 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 463660, guid: 38f5f7fa8b6111143851e0682ed197b8, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.8508289
-      objectReference: {fileID: 0}
-    - target: {fileID: 11496946, guid: 38f5f7fa8b6111143851e0682ed197b8, type: 2}
-      propertyPath: fade
+    - target: {fileID: 2397870, guid: 38f5f7fa8b6111143851e0682ed197b8, type: 2}
+      propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 342564536}
+      objectReference: {fileID: 2100000, guid: 287b7b6cab4e4e14f94e29f7d81163f0, type: 2}
     - target: {fileID: 11496946, guid: 38f5f7fa8b6111143851e0682ed197b8, type: 2}
       propertyPath: canvas
       value: 
       objectReference: {fileID: 1441968314}
-    m_RemovedComponents: []
+    - target: {fileID: 11496946, guid: 38f5f7fa8b6111143851e0682ed197b8, type: 2}
+      propertyPath: fade
+      value: 
+      objectReference: {fileID: 342564536}
+    m_RemovedComponents:
+    - {fileID: 11496946, guid: 38f5f7fa8b6111143851e0682ed197b8, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 38f5f7fa8b6111143851e0682ed197b8, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1149328821

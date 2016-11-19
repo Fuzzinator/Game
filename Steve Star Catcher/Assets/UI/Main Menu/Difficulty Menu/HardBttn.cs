@@ -29,6 +29,6 @@ public class HardBttn : MonoBehaviour {
         //DifficultyStaticVars.wolfJump;
         DifficultyStaticVars.wolfCanSpawn = true;
         DifficultyStaticVars.difficulty = "Hard";
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(5);
     }
 }

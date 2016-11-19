@@ -15,3 +15,5 @@ EditorBuildSettings:
     path: Assets/UI/Level Complete/Level Complete.unity
   - enabled: 1
     path: Assets/Game Scripts/Level 2.unity
+  - enabled: 1
+    path: Assets/Cinematic/lvl1Start.unity
