@@ -12414,6 +12414,10 @@ Prefab:
       propertyPath: pauseScreen
       value: 
       objectReference: {fileID: 1943033993}
+    - target: {fileID: 11498616, guid: 0c8e69ce748feb94a906afc827d43458, type: 2}
+      propertyPath: jumpForce
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 13535460, guid: 0c8e69ce748feb94a906afc827d43458, type: 2}
     - {fileID: 11496888, guid: 0c8e69ce748feb94a906afc827d43458, type: 2}

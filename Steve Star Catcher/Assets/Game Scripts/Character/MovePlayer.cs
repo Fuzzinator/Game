@@ -27,7 +27,7 @@ public class MovePlayer : MonoBehaviour {
     //The speed the character falls
     public float gravity = 1f;
     //speed and distance character jumps up
-    public float jumpForce = 10f ;
+    public float jumpForce = 5f ;
     // sliding variables
     public int slideDuration = 100;
     public float slideTime = 0.01f;
