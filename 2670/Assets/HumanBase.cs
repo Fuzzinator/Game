@@ -4,6 +4,7 @@ using System;
 
 public class HumanBase : MonoBehaviour, IAttack, IDamage {
 
+    public int[] characteristics;
     public int strength;
     public int perception;
     public int intelligence;
@@ -23,15 +24,14 @@ public class HumanBase : MonoBehaviour, IAttack, IDamage {
 
     // Use this for initialization
     public virtual void Start () {
-        strength = 5;
-        perception = 5;
-        intelligence = 5;
-        dexterity = 5;
 
-	}
+        characteristics = new int[] { 5, 5, 5, 5 };
+
+        strength = characteristics[0];
+        perception = characteristics[1];
+        intelligence = characteristics[2];
+        dexterity = characteristics[3];
+
+    }
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

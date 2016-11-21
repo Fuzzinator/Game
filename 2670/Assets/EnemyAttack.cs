@@ -19,8 +19,4 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
 	
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

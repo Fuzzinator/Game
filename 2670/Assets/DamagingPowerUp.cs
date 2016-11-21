@@ -14,8 +14,5 @@ public class DamagingPowerUp : MonoBehaviour, IDamage {
         Damage();
 	}
 	
-	// Update is called once per frame
-	void Update () {
 	
-	}
 }

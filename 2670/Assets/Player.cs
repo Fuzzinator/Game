@@ -1,21 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class Player : HumanBase {
+
+    
 
 	// Use this for initialization
 	public override void Start () {
         base.Start();
 
-        print("Your characters base stats are: " + strength + " " + perception + " " + intelligence + " " + dexterity);
+        for (int i = 0; i < StaticVars.addScore; i++)
+        {
+            characteristics[Random.Range(0, 3)]++;
 
-        print("do other stuff");
+        }
+
+
+        print("Your characters base stats are: " + strength + " " + perception + " " + intelligence + " " + dexterity);
+        
         
 
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
