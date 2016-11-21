@@ -10,6 +10,7 @@ public class DestroyStar : MonoBehaviour {
 
     public GameObject hare;
     public GameObject starColor;
+    public GameObject star;
 
     public int playerScore;
 
@@ -26,6 +27,8 @@ public class DestroyStar : MonoBehaviour {
     public int blueIncrease = 3;
     public int greenIncrease = 5;
 
+    public GameObject collideSparks;
+
     //public static bool canCollect;
 
     private bool inAir = true;
@@ -36,6 +39,8 @@ public class DestroyStar : MonoBehaviour {
 
     private Vector3 forceVector;
     private Vector3 torqueVector;
+
+    private ParticleSystem starCore;
 
     //IEnumerator EndStar()
     //{
@@ -80,6 +85,31 @@ public class DestroyStar : MonoBehaviour {
    // {
    //     Destroy(gameObject);
    // }
+
+    IEnumerator CollideSparks()
+    {
+        collideSparks.SetActive(true);
+        yield return new WaitForSeconds(.1f);
+        collideSparks.SetActive(false);
+    }
+
+    IEnumerator StarFlash()
+    {
+        print("StarFlash");
+        starCore = star.GetComponent<ParticleSystem>();
+        int i = 0;
+        if(i < 10)
+        {
+            print("Dostuff");
+            starCore.Stop();
+            yield return new WaitForSeconds(1f);
+            starCore.Play();
+            yield return new WaitForSeconds(1f);
+            i++;
+        }
+
+    }
+
     void OnCollisionEnter(Collision col) {
         if (col.gameObject.name == "Character" && MovePlayer.hurt != true)
         {
@@ -114,6 +144,8 @@ public class DestroyStar : MonoBehaviour {
             forceVector.y = force+force;
             rigid.AddForce(forceVector+forceVector);
             trail.SetActive(false);
+            StartCoroutine(CollideSparks());
+            StartCoroutine(StarFlash());
             Destroy(gameObject, endTime);
 
         }

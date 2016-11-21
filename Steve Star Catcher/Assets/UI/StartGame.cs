@@ -12,9 +12,18 @@ public class StartGame : MonoBehaviour {
 
     void Start()
     {
-        //Time.timeScale = 0;
-        Button btn = startButton.GetComponent<Button>();
-        btn.onClick.AddListener(TaskOnClick);
+        if (StaticVars.intro)
+        {
+            //Time.timeScale = 0;
+            Button btn = startButton.GetComponent<Button>();
+            btn.onClick.AddListener(TaskOnClick);
+        }
+        if(!StaticVars.intro)
+        {
+            Time.timeScale = 1;
+            Turn_Off[0].SetActive(false);
+        }
+
     }
 
     void TaskOnClick()
@@ -33,7 +42,7 @@ public class StartGame : MonoBehaviour {
         //Game_Playables[9].SetActive(true);
 
 
-
+        StaticVars.intro = false;
         Turn_Off[0].SetActive(false);
             //Turn_Off[1].SetActive(false);
             //Turn_Off[2].SetActive(false);

@@ -14,4 +14,19 @@
     public static bool firstCall2;
 
     public static bool firstRun = true;
+
+    public static float gravity = 1f;
+
+    public static bool intro = true;
+
+
+
+
+
+
+
+
+
+
+    public static bool uvuSplash = true;
 }

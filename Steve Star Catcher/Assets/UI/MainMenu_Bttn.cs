@@ -19,6 +19,6 @@ public class MainMenu_Bttn : MonoBehaviour {
     {
         SceneManager.LoadScene(0);
         Time.timeScale = 1;
-
+        StaticVars.intro = true;
     }
 }

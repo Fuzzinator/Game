@@ -15,8 +15,7 @@ public class MovePlayer : MonoBehaviour {
     public GameObject HurtAir;
     public GameObject HurtIdle;
     public GameObject HurtRunning;
-    public GameObject Blink;
-
+   
     //assign location as a temp var to move character
     private Vector3 tempposition;
 
@@ -152,8 +151,10 @@ public class MovePlayer : MonoBehaviour {
     // Update is called once per frame update is bad
     void Update () {
 
-       // Idle_Hare();
-
+       if(StaticVars.playerScore < 0)
+        {
+            StaticVars.playerScore = 0;
+        }
         
         //jump
         if (Input.GetKeyDown("space") && jumpCount < jumpMax-1)
@@ -163,6 +164,8 @@ public class MovePlayer : MonoBehaviour {
             
 
         }
+
+
         if (controller.isGrounded == false)
         {
             Idle.SetActive(false);

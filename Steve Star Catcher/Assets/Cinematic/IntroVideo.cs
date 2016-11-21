@@ -20,6 +20,7 @@ public class IntroVideo : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
         StartCoroutine(Fading());
     }
 }
