@@ -30,11 +30,13 @@ public class Player : HumanBase {
         intelligence = characteristics[2];
         dexterity = characteristics[3];
 
-        speed += ((dexterity * 2) - speed);
+        StaticVars.playerSpeed = speed;
+        StaticVars.playerSpeed += ((dexterity * 2) - StaticVars.playerSpeed);
 
         print("Your characters base stats are: " + strength + " " + perception + " " + intelligence + " " + dexterity);
 
-        tempPos.x = speed * Input.GetAxis("Horizontal");
+        tempPos.x = StaticVars.playerSpeed * Input.GetAxis("Horizontal");
+
 
         //StartCoroutine(BaseState());
 

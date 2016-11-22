@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-public class HumanBase : MonoBehaviour, IAttack, IDamage {
+public class HumanBase : MonoBehaviour, IAttack, IDamage, ITalk {
 
     public int[] characteristics;
     public int strength;
@@ -35,5 +35,9 @@ public class HumanBase : MonoBehaviour, IAttack, IDamage {
         speed = dexterity;
 
     }
-	
+
+    public void Talk()
+    {
+        print("Grunt");
+    }
 }
