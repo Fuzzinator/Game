@@ -84,7 +84,8 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
                     break;
                 }
             i++;
-        }     
+        }
+        i = 0;    
     }
 
     public void Damage()
