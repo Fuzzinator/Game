@@ -1,18 +1,27 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 
 public class Player : HumanBase {
 
+    Action<int> Move;
+    public static Action<KeyCode> UserInput;
+
+    public CharacterController myCC;
     
 
-	// Use this for initialization
-	public override void Start () {
+    private Vector3 tempPos;
+
+    
+
+    // Use this for initialization
+    public override void Start () {
         base.Start();
 
         for (int i = 0; i < StaticVars.addScore; i++)
         {
-            characteristics[Random.Range(0, 3)]++;
+            characteristics[UnityEngine.Random.Range(0, 3)]++;
 
         }
 
@@ -21,10 +30,70 @@ public class Player : HumanBase {
         intelligence = characteristics[2];
         dexterity = characteristics[3];
 
-        print("Your characters base stats are: " + strength + " " + perception + " " + intelligence + " " + dexterity);
-        
-        
+        speed += ((dexterity * 2) - speed);
 
-	}
+        print("Your characters base stats are: " + strength + " " + perception + " " + intelligence + " " + dexterity);
+
+        tempPos.x = speed * Input.GetAxis("Horizontal");
+
+        //StartCoroutine(BaseState());
+
+        // Move = MoveHander(dexterity);
+
+    }
+
+    //IEnumerator BaseState()
+    //{
+    //    //if (Input.GetKeyDown(KeyCode.RightArrow))// && UserInput != null)
+    //    //{
+
+    //    //    //UserInput(KeyCode.RightArrow);
+    //    //}
+    //    //if (Input.GetKeyDown(KeyCode.LeftArrow))// && UserInput != null)
+    //    //{
+    //    //    //UserInput(KeyCode.LeftArrow);
+    //    //}
+    //    if (Input.GetKeyDown(KeyCode.Space))// && UserInput != null)
+    //    {
+    //       // UserInput(KeyCode.Space);
+    //    }
+
+    //    if (Input.GetKeyDown(KeyCode.Escape))
+    //    {
+    //        if (Time.timeScale == 1)
+    //        {
+    //            //pauseScreen.SetActive(true);
+    //            Time.timeScale = 0;
+    //        }
+    //        else
+    //        {
+    //            //pauseScreen.SetActive(false);
+    //            Time.timeScale = 1;
+    //        }
+
+    //    }
+    //   for(float i = 0; i < StaticVars.endTime;)
+    //    {
+    //        tempPos.x = speed * Input.GetAxis("Horizontal");
+    //        tempPos.x = 
+
+    //        StaticVars.idleTime += 1 * Time.deltaTime;
+
+    //        i += 1 * Time.deltaTime;
+    //        print(i);
+    //    }
+
+    //    yield return new WaitForSeconds(.01f);
+    //}
+
+    int MoveHander(int s)
+    {
+        print("Action");
+
+        return s;
+
+    }
+
+    
 	
 }

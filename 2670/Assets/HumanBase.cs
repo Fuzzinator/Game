@@ -9,7 +9,7 @@ public class HumanBase : MonoBehaviour, IAttack, IDamage {
     public int perception;
     public int intelligence;
     public int dexterity;
-
+    public int speed;
 
 
     public virtual void Attack()
@@ -31,6 +31,8 @@ public class HumanBase : MonoBehaviour, IAttack, IDamage {
         perception = characteristics[1];
         intelligence = characteristics[2];
         dexterity = characteristics[3];
+
+        speed = dexterity;
 
     }
 	
