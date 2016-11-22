@@ -18,7 +18,7 @@ public class Interact : MonoBehaviour {
         }
         if (col.name == "Foe")
         {
-            print("Enemy!!!");
+            foe.GetComponent<AverageEnemy>().Attack();
         }
 
     }
