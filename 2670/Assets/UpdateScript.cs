@@ -27,7 +27,7 @@ public class UpdateScript : MonoBehaviour {
 
         transform.Rotate(0, Input.GetAxis("Horizontal") * rotationSpeed, 0);
         Vector3 forward = transform.TransformDirection(Vector3.forward);
-        float curSpeed = StaticVars.playerSpeed * Input.GetAxis("Vertical");
+        float curSpeed = Player.playerSpeed * Input.GetAxis("Vertical");
         creature.SimpleMove(forward * curSpeed);
 
         //tempPos.x = Input.GetAxis("Horizontal")* StaticVars.playerSpeed;

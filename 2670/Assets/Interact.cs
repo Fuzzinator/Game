@@ -6,16 +6,21 @@ public class Interact : MonoBehaviour {
     public GameObject friend;
     public GameObject foe;
 
+    
+    
+
     void OnTriggerEnter(Collider col)
     {
-        if (col == friend)
+        //print("triggering");
+        if (col.name == "Friend")
         {
-            print("Friend");
+            friend.GetComponent<AverageShmo>().Talk();
         }
-        if (col == foe)
+        if (col.name == "Foe")
         {
             print("Enemy!!!");
         }
+
     }
 
 }

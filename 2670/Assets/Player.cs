@@ -12,16 +12,31 @@ public class Player : HumanBase {
     
 
     private Vector3 tempPos;
+    public static float playerSpeed;
+    public static new int strength;
+    public static new int perception;
+    public static new int intelligence;
+    public static new int dexterity;
+    public static new int charisma;
 
-    
+    private int scoreIncrease;
 
     // Use this for initialization
     public override void Start () {
         base.Start();
 
+
+
         for (int i = 0; i < StaticVars.addScore; i++)
         {
-            characteristics[UnityEngine.Random.Range(0, 3)]++;
+            scoreIncrease = UnityEngine.Random.Range(0, 4);
+            characteristics[scoreIncrease]++;
+
+            if (characteristics[scoreIncrease] > 10)
+            {
+                characteristics[i]--;
+                StaticVars.addScore++;
+            }
 
         }
 
@@ -29,11 +44,14 @@ public class Player : HumanBase {
         perception = characteristics[1];
         intelligence = characteristics[2];
         dexterity = characteristics[3];
+        charisma = characteristics[4];
 
-        StaticVars.playerSpeed = speed;
-        StaticVars.playerSpeed += ((dexterity * 2) - StaticVars.playerSpeed);
 
-        print("Your characters base stats are: " + strength + " " + perception + " " + intelligence + " " + dexterity);
+        playerSpeed = speed;
+        playerSpeed += ((dexterity * 2) - playerSpeed);
+
+        print("Your characters base stats are: Strength:" + strength + " Perception:" + perception
+            + " Intelligence:" + intelligence + " Dexterity:" + dexterity + " Charisma:" + charisma);
 
         tempPos.x = StaticVars.playerSpeed * Input.GetAxis("Horizontal");
 
