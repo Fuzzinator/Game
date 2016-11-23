@@ -14,10 +14,12 @@ public class AverageEnemy : HumanBase {
     {
         base.Start();
 
+        CountEnemies.enemies.Add(gameObject);
+
         for (int i = 0; i < chngScore; i++)
         {
             charCounter = UnityEngine.Random.Range(0, 4);
-            scoreIncrease = UnityEngine.Random.Range(-1, 1);
+            scoreIncrease = UnityEngine.Random.Range(-2, 2);
             characteristics[charCounter] += scoreIncrease;
 
             //if (characteristics[scoreIncrease] > 10)
@@ -28,7 +30,14 @@ public class AverageEnemy : HumanBase {
 
         }
 
+        strength = characteristics[0];
+        perception = characteristics[1];
+        intelligence = characteristics[2];
+        dexterity = characteristics[3];
+        charisma = characteristics[4];
 
+        print("Your enemy's base stats are: Strength:" + strength + " Perception:" + perception
+           + " Intelligence:" + intelligence + " Dexterity:" + dexterity + " Charisma:" + charisma);
     }
 
     public override sealed void Attack()

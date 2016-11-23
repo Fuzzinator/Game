@@ -91,7 +91,7 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
         i = 0;
 
 
-        player.GetComponent<Player>().Attack();   
+        player.GetComponent<Player>().Attack(this.gameObject);   
     }
 
     public void Damage()

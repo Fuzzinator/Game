@@ -6,6 +6,7 @@ public class UpdateScript : MonoBehaviour {
 
     public CharacterController creature;
     public CharacterController gravityEffects;
+    public GameObject player;
 
     public float speed = 20;
     public float rotationSpeed = 10;
@@ -38,6 +39,11 @@ public class UpdateScript : MonoBehaviour {
             jumpCount++;
 
 
+        }
+
+        if (Input.GetKeyDown("tab"))
+        {
+            player.GetComponent<CountEnemies>().enemiesSize();
         }
 
         //this.transform.Rotate((Input.GetAxis("Mouse Y") * -rotationSpeed * Time.deltaTime), (Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime), 0, Space.World);

@@ -21,12 +21,12 @@ public class Player : HumanBase {
     public static new int dexterity;
     public static new int charisma;
     public int damage;
-    public int i;
+    public int hitCount;
 
 
-    public int numAttacks = AverageEnemy.dexterity / 2;
+    public int numAttacks;
 
-    public static bool tired = false;
+    public static bool tired;
 
     private int scoreIncrease;
 
@@ -34,7 +34,7 @@ public class Player : HumanBase {
     public override void Start () {
         base.Start();
 
-
+        tired = false;
 
         for (int i = 0; i < StaticVars.addScore; i++)
         {
@@ -43,11 +43,13 @@ public class Player : HumanBase {
 
             if (characteristics[scoreIncrease] > 10)
             {
-                characteristics[i]--;
+                characteristics[scoreIncrease]--;
                 StaticVars.addScore++;
             }
 
         }
+
+        hitCount = 0;
 
         strength = characteristics[0];
         perception = characteristics[1];
@@ -55,6 +57,7 @@ public class Player : HumanBase {
         dexterity = characteristics[3];
         charisma = characteristics[4];
 
+        numAttacks = dexterity / 2;
         damage = (int)(strength * 1.5);
 
 
@@ -78,17 +81,18 @@ public class Player : HumanBase {
         //base.Attack();
 
         
+        
 
         if (!tired)
         {
-
-            while (i < numAttacks)
+            
+            while (hitCount < numAttacks)
             {
                 print("You swing at the enemy!");
                 Damage(hit);
-                i++;
+                hitCount++;
             }
-            i = 0;
+            hitCount = 0;
             tired = true;
             hit.GetComponent<EnemyAttack>().Attack();
 
