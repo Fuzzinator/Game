@@ -62,6 +62,12 @@ public class Player : HumanBase {
 
     }
 
+    public override void Attack()
+    {
+        base.Attack();
+
+    }
+
     //IEnumerator BaseState()
     //{
     //    //if (Input.GetKeyDown(KeyCode.RightArrow))// && UserInput != null)

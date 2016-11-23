@@ -18,7 +18,10 @@ public class Interact : MonoBehaviour {
         }
         if (col.name == "Foe")
         {
-            foe.GetComponent<AverageEnemy>().Attack();
+            if (AverageEnemy.dexterity > Player.dexterity)
+            {
+                foe.GetComponent<AverageEnemy>().Attack();
+            }
         }
 
     }

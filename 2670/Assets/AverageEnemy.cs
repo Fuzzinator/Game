@@ -14,7 +14,7 @@ public class AverageEnemy : HumanBase {
         for (int i = 0; i < StaticVars.addScore; i++)
         {
             charCounter = UnityEngine.Random.Range(0, 4);
-            scoreIncrease = UnityEngine.Random.Range(-1, 1);
+            scoreIncrease = UnityEngine.Random.Range(-2, 2);
             characteristics[charCounter] += scoreIncrease;
 
             if (characteristics[scoreIncrease] > 10)
