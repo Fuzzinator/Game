@@ -89,6 +89,8 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
             i++;
         }
         i = 0;
+
+
         player.GetComponent<Player>().Attack();   
     }
 

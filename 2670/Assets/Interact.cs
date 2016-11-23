@@ -25,7 +25,7 @@ public class Interact : MonoBehaviour {
             }
             else if(AverageEnemy.dexterity < Player.dexterity )
             {
-                player.GetComponent<Player>().Attack();
+                player.GetComponent<Player>().Attack(col.gameObject);
             }
         }
 

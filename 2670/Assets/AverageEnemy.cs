@@ -36,7 +36,8 @@ public class AverageEnemy : HumanBase {
         if (!tired)
         {
             tired = true;
-            this.GetComponent<EnemyAttack>().Attack();           
+            this.GetComponent<EnemyAttack>().Attack();
+           
         }
         StartCoroutine(TiredCounter());
 

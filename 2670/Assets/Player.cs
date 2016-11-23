@@ -20,6 +20,11 @@ public class Player : HumanBase {
     public static new int intelligence;
     public static new int dexterity;
     public static new int charisma;
+    public int damage;
+    public int i;
+
+
+    public int numAttacks = AverageEnemy.dexterity / 2;
 
     public static bool tired = false;
 
@@ -50,6 +55,8 @@ public class Player : HumanBase {
         dexterity = characteristics[3];
         charisma = characteristics[4];
 
+        damage = (int)(strength * 1.5);
+
 
         playerSpeed = speed;
         playerSpeed += ((dexterity * 2) - playerSpeed);
@@ -66,14 +73,25 @@ public class Player : HumanBase {
 
     }
 
-    public override void Attack()
+    public void Attack(GameObject hit)
     {
         //base.Attack();
-        print("You swing at the enemy!");
+
+        
+
         if (!tired)
         {
+
+            while (i < numAttacks)
+            {
+                print("You swing at the enemy!");
+                Damage(hit);
+                i++;
+            }
+            i = 0;
             tired = true;
-            foe.GetComponent<EnemyAttack>().Attack();
+            hit.GetComponent<EnemyAttack>().Attack();
+
         }
         StartCoroutine(TiredCount());
     }
@@ -83,6 +101,11 @@ public class Player : HumanBase {
         yield return new WaitForSeconds(2);
         tired = false;
 
+    }
+
+    public void Damage(GameObject hit)
+    {
+        print("You hit the enemy for " + damage + " damage");
     }
 
     //IEnumerator BaseState()

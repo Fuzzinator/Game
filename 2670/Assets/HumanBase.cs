@@ -11,6 +11,7 @@ public class HumanBase : MonoBehaviour, IAttack, IDamage, ITalk {
     public static int dexterity;
     public static int speed;
     public static int charisma;
+    public static int health;
 
 
     public virtual void Attack()
@@ -35,6 +36,8 @@ public class HumanBase : MonoBehaviour, IAttack, IDamage, ITalk {
         charisma = characteristics[4];
 
         speed = dexterity;
+
+        health = 10;
 
     }
 
