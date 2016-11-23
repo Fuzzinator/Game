@@ -9,6 +9,8 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
     public int numAttacks = AverageEnemy.dexterity / 2;
     public int i;
 
+    public GameObject player;
+
     public void Attack()
     {
 
@@ -21,7 +23,8 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
                     hitPlayer = UnityEngine.Random.Range(0, 10);
                     if (Player.dexterity <= hitPlayer)
                     {
-                        print("Ouch! Enemy hits you for " + AverageEnemy.strength + " damage!");
+                        Damage();
+                       
                     }else
                     {
                         print("Phew! The attack missed!");
@@ -31,7 +34,7 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
                     percentHit = UnityEngine.Random.Range(Player.dexterity - 5, Player.dexterity + 5);
                     if (Player.dexterity <= hitPlayer)
                     {
-                        print("Ouch! Enemy hits you for " + AverageEnemy.strength + " damage!");
+                        Damage();
                     }
                     else
                     {
@@ -42,7 +45,7 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
                     hitPlayer = UnityEngine.Random.Range(Player.dexterity - 3, Player.dexterity + 7);
                     if (Player.dexterity <= hitPlayer)
                     {
-                        print("Ouch! Enemy hits you for " + AverageEnemy.strength + " damage!");
+                        Damage();
                     }
                     else
                     {
@@ -53,7 +56,7 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
                     percentHit = UnityEngine.Random.Range(Player.dexterity - 2, Player.dexterity + 8);
                     if (Player.dexterity >= hitPlayer)
                     {
-                        print("Ouch! Enemy hits you for " + AverageEnemy.strength + " damage!");
+                        Damage();
                     }
                     else
                     {
@@ -64,7 +67,7 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
                     hitPlayer = UnityEngine.Random.Range(Player.dexterity - 1, Player.dexterity + 9);
                     if (Player.dexterity <= hitPlayer)
                     {
-                        print("Ouch! Enemy hits you for " + AverageEnemy.strength + " damage!");
+                        Damage();
                     }
                     else
                     {
@@ -75,7 +78,7 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
                     percentHit = UnityEngine.Random.Range(Player.dexterity, Player.dexterity + 10);
                     if (Player.dexterity >= hitPlayer)
                     {
-                        print("Ouch! Enemy hits you for " + AverageEnemy.strength + " damage!");
+                        Damage();
                     }
                     else
                     {
@@ -85,12 +88,15 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
                 }
             i++;
         }
-        i = 0;    
+        i = 0;
+        player.GetComponent<Player>().Attack();   
     }
 
     public void Damage()
     {
-        print("damage player");
+
+        print("Ouch! Enemy hits you for " + AverageEnemy.strength + " damage!");
+        
     }
 
 }

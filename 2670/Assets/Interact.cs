@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Interact : MonoBehaviour {
 
+    public GameObject player;
     public GameObject friend;
     public GameObject foe;
 
@@ -21,6 +22,10 @@ public class Interact : MonoBehaviour {
             if (AverageEnemy.dexterity > Player.dexterity)
             {
                 foe.GetComponent<AverageEnemy>().Attack();
+            }
+            else if(AverageEnemy.dexterity < Player.dexterity )
+            {
+                player.GetComponent<Player>().Attack();
             }
         }
 

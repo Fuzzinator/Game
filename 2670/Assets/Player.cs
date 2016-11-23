@@ -9,6 +9,8 @@ public class Player : HumanBase {
     public static Action<KeyCode> UserInput;
 
     public CharacterController myCC;
+
+    public GameObject foe;
     
 
     private Vector3 tempPos;
@@ -18,6 +20,8 @@ public class Player : HumanBase {
     public static new int intelligence;
     public static new int dexterity;
     public static new int charisma;
+
+    public static bool tired = false;
 
     private int scoreIncrease;
 
@@ -64,7 +68,20 @@ public class Player : HumanBase {
 
     public override void Attack()
     {
-        base.Attack();
+        //base.Attack();
+        print("You swing at the enemy!");
+        if (!tired)
+        {
+            tired = true;
+            foe.GetComponent<EnemyAttack>().Attack();
+        }
+        StartCoroutine(TiredCount());
+    }
+
+    IEnumerator TiredCount()
+    {
+        yield return new WaitForSeconds(2);
+        tired = false;
 
     }
 
