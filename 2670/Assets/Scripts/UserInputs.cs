@@ -6,6 +6,7 @@ public class UserInputs : MonoBehaviour
 {
     public GameObject pauseScreen;
     public static Action<KeyCode> UserInput;
+    public static Action<int> action;
 
     // Update is called once per frame
     void Update()

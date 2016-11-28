@@ -26,6 +26,26 @@ public class UpdateScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+
+        if (Input.GetKeyDown(KeyCode.RightArrow) && UserInputs.UserInput != null)
+        {
+            UserInputs.UserInput(KeyCode.RightArrow);
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && UserInputs.UserInput != null)
+        {
+            UserInputs.UserInput(KeyCode.LeftArrow);
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && UserInputs.UserInput != null)
+        {
+            UserInputs.UserInput(KeyCode.Space);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            
+
+        }
+
         transform.Rotate(0, Input.GetAxis("Horizontal") * rotationSpeed, 0);
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         float curSpeed = Player.playerSpeed * Input.GetAxis("Vertical");
