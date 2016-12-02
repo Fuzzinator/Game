@@ -13,11 +13,12 @@ public class Interact : MonoBehaviour {
     void OnTriggerEnter(Collider col)
     {
         //print("triggering");
-        if (col.name == "Friend")
+        if (col.name == friend.name)
         {
             friend.GetComponent<AverageShmo>().Talk();
         }
-        if (col.name == "Foe")
+
+        else if (col.name == foe.name)
         {
             //if (AverageEnemy.dexterity > Player.dexterity)
             //{
