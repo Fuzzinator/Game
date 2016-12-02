@@ -22,6 +22,13 @@ public class UpdateScript : MonoBehaviour {
 	void Start () {
 	
 	}
+
+
+    IEnumerator ResetJump ()
+    {
+        yield return new WaitForSeconds(.5f);
+        jumpCount = 0;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -53,13 +60,18 @@ public class UpdateScript : MonoBehaviour {
 
         //tempPos.x = Input.GetAxis("Horizontal")* StaticVars.playerSpeed;
         //tempPos.z = Input.GetAxis("Vertical");
-        if (Input.GetKeyDown("space") && jumpCount < jumpMax - 1)
+        if (Input.GetKeyDown("space") && jumpCount < jumpMax)
         {
             tempPos.y = jumpForce;
             jumpCount++;
 
+            if (jumpCount >= jumpMax)
+            {
+                StartCoroutine(ResetJump());
+            }
 
         }
+        
 
         if (Input.GetKeyDown("tab"))
         {

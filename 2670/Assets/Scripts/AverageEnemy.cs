@@ -14,6 +14,8 @@ public class AverageEnemy : HumanBase {
     {
         base.Start();
 
+        //Recycle.SendToGenerator += AddToList;
+
         CountEnemies.enemies.Add(gameObject);
 
         for (int i = 0; i < chngScore; i++)
@@ -57,4 +59,11 @@ public class AverageEnemy : HumanBase {
         yield return new WaitForSeconds(2);
         tired = false;
     }
+
+
+    //private void AddToList(NavAgent obj)
+    //{
+    //    RecycleList.Add(obj);
+    //    obj.transform.position = spawner.position
+    //}
 }

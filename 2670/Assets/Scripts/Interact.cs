@@ -19,9 +19,11 @@ public class Interact : MonoBehaviour {
         }
         if (col.name == "Foe")
         {
-            if (AverageEnemy.dexterity > Player.dexterity)
-            {
-                foe.GetComponent<AverageEnemy>().Attack();
+            //if (AverageEnemy.dexterity > Player.dexterity)
+            //{
+            //   // if{(AverageEnemy.health <= 0)
+            //            { }
+               foe.GetComponent<AverageEnemy>().Attack();
             }
             else if(AverageEnemy.dexterity < Player.dexterity )
             {
@@ -31,4 +33,4 @@ public class Interact : MonoBehaviour {
 
     }
 
-}
+//}
