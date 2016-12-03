@@ -20,15 +20,17 @@ public class Player : HumanBase {
     public static new int intelligence;
     public static new int dexterity;
     public static new int charisma;
-    public int damage;
+    //public int damage;
     public int hitCount;
 
+    public static int[] damage;
 
     public int numAttacks;
 
     public static bool tired;
 
     private int scoreIncrease;
+
 
     // Use this for initialization
     public override void Start () {
@@ -58,8 +60,11 @@ public class Player : HumanBase {
         charisma = characteristics[4];
 
         numAttacks = dexterity / 2;
-        damage = (int)(strength * 1.5);
 
+        for (int i = 0; i < numAttacks; i++)
+        {
+            damage[i] = (int)(strength * (UnityEngine.Random.Range(0.5f, 1.5f)));
+        }
 
         playerSpeed = speed;
         playerSpeed += ((dexterity * 2) - playerSpeed);
@@ -88,9 +93,13 @@ public class Player : HumanBase {
             
             while (hitCount < numAttacks)
             {
-                print("You swing at the enemy!");
-                Damage(hit);
-                hitCount++;
+                foreach (int hurt in damage)
+                {
+                    
+                    print("You swing at the enemy!");
+                    Damage(hit, hitCount);
+                    hitCount++;
+                }
             }
             hitCount = 0;
             tired = true;
@@ -107,9 +116,9 @@ public class Player : HumanBase {
 
     }
 
-    public void Damage(GameObject hit)
+    public static void Damage(GameObject hit, int damageNum)
     {
-        print("You hit the enemy for " + damage + " damage");
+        print("You hit the enemy for " + damage[damageNum] + " damage");
     }
 
     //IEnumerator BaseState()
