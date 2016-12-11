@@ -11,6 +11,7 @@ public class Character_Clip_Art : MonoBehaviour
 
     void FlipCharacter (KeyCode  _keyCode)
     {
+
         switch (_keyCode)
         {
             case KeyCode.RightArrow:
@@ -23,6 +24,16 @@ public class Character_Clip_Art : MonoBehaviour
                 }
                 break;
 
+            case KeyCode.D:
+                if (forward)
+                {
+                    CharacterArt.Rotate(0, 180, 0);
+                    print("Right");
+                    forward = false;
+
+                }
+                break;
+
             case KeyCode.LeftArrow:
                 if (!forward)
                 {
@@ -31,6 +42,15 @@ public class Character_Clip_Art : MonoBehaviour
                     forward = true;
                 }
             break;
+
+            case KeyCode.A:
+                if (!forward)
+                {
+                    CharacterArt.Rotate(0, 180, 0);
+                    print("Left");
+                    forward = true;
+                }
+                break;
 
         }
         

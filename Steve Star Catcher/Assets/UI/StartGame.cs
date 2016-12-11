@@ -7,6 +7,7 @@ public class StartGame : MonoBehaviour {
 
     public GameObject[] Game_Playables;
     public GameObject[] Turn_Off;
+    public AudioSource gameMusic;
 
     public Button startButton;
 
@@ -22,6 +23,7 @@ public class StartGame : MonoBehaviour {
         {
             Time.timeScale = 1;
             Turn_Off[0].SetActive(false);
+            gameMusic.Play();
         }
 
     }
@@ -41,7 +43,7 @@ public class StartGame : MonoBehaviour {
         //Game_Playables[8].SetActive(true);
         //Game_Playables[9].SetActive(true);
 
-
+        gameMusic.Play();
         StaticVars.intro = false;
         Turn_Off[0].SetActive(false);
             //Turn_Off[1].SetActive(false);

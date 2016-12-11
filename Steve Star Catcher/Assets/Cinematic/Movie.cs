@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class Movie : MonoBehaviour {
 
     //public GameObject movTexture;
@@ -18,23 +19,28 @@ public class Movie : MonoBehaviour {
 
     public float minimum = 0.0f;
     public float maximum = 1f;
-    public float duration = 5.0f;
+    //public float duration = 5.0f;
     private float startTime;
     private SpriteRenderer sprite;
 
+    //IEnumerator movieLength()
+    //{
+    //    yield return new WaitForSeconds(duration);
+    //}
 
     void Start()
     {
         MovieTexture movie = GetComponent<Renderer>().material.mainTexture as MovieTexture;
         movie.Play();
 
+        //StartCoroutine(movieLength());
         //Renderer rend = GetComponent<Renderer>();
         //rend.material.shader = Shader.Find("Specular");
         //rend.material.SetColor("_SpecColor", Color.red);
 
-        sprite = GetComponent<SpriteRenderer>();
+        //sprite = GetComponent<SpriteRenderer>();
 
-        sprite.color = new Color(0, 0, 0);
+       // sprite.color = new Color(0, 0, 0);
 
         //startTime = Time.time;
     }

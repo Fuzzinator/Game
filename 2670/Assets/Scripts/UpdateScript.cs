@@ -8,6 +8,9 @@ public class UpdateScript : MonoBehaviour {
     public CharacterController gravityEffects;
     public GameObject player;
 
+    public NavMeshAgent enemyNavMesh;
+    public Transform playerPos;
+
     public float speed = 20;
     public float rotationSpeed = 10;
     public int jumpCount = 0;
@@ -88,6 +91,8 @@ public class UpdateScript : MonoBehaviour {
 
 
         creature.Move(tempPos);
-	
-	}
+
+        enemyNavMesh.destination = playerPos.position;
+
+    }
 }

@@ -16,6 +16,6 @@ public class ContinueBttn : MonoBehaviour
 
     void TaskOnClick()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(StaticVars.nextLvl);
     }
 }

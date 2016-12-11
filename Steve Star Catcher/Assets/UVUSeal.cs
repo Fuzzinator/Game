@@ -24,7 +24,7 @@ public class UVUSeal : MonoBehaviour {
     {
         
         yield return new WaitForSeconds(3);
-        StaticVars.uvuSplash = false;
+        
         video.SetActive(true);
         uvusplashscreen.SetActive(false);
     }

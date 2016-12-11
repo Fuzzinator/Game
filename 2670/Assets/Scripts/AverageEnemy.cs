@@ -40,6 +40,10 @@ public class AverageEnemy : HumanBase {
 
         print("Your enemy's base stats are: Strength:" + strength + " Perception:" + perception
            + " Intelligence:" + intelligence + " Dexterity:" + dexterity + " Charisma:" + charisma);
+
+         
+
+        
     }
 
     public override sealed void Attack()
@@ -47,6 +51,8 @@ public class AverageEnemy : HumanBase {
         if (!tired)
         {
             tired = true;
+            print("The enemy attacks!");
+            StartCoroutine(SmallPause());
             this.GetComponent<EnemyAttack>().Attack();
            
         }
@@ -58,6 +64,11 @@ public class AverageEnemy : HumanBase {
     {
         yield return new WaitForSeconds(2);
         tired = false;
+    }
+
+    public static IEnumerator SmallPause()
+    {
+        yield return new WaitForSeconds(1);
     }
 
 

@@ -10,11 +10,12 @@ public class EasyBttn : MonoBehaviour
 
     void Start()
     {
+        DifficultyStaticVars.buttonAction = "NewGame";
         Button btn = button.GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
     }
 
-    void TaskOnClick()
+    static public void TaskOnClick()
     {
 
         DifficultyStaticVars.cameraSpeed = 0.5f;
@@ -23,13 +24,20 @@ public class EasyBttn : MonoBehaviour
         DifficultyStaticVars.clsBackSpeed = .65f;
         DifficultyStaticVars.startTime = 60;
         DifficultyStaticVars.wolfDamage = 0;
-        DifficultyStaticVars.cactusDamage = 1;
+        DifficultyStaticVars.cactusDamage = 0;
         DifficultyStaticVars.hurtTime = .5f;
         DifficultyStaticVars.wolfFrequency = 1;
         DifficultyStaticVars.wolfSpawnYes = 1;
         //DifficultyStaticVars.wolfJump;
         DifficultyStaticVars.wolfCanSpawn = false;
         DifficultyStaticVars.difficulty = "Easy";
-        SceneManager.LoadScene(5);
+        if (DifficultyStaticVars.buttonAction == "NewGame")
+        {
+            SceneManager.LoadScene(5);
+        }
+        else if (DifficultyStaticVars.buttonAction == "Retry")
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }

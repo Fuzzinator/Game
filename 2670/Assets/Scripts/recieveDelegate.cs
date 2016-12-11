@@ -16,7 +16,7 @@ public class recieveDelegate : MonoBehaviour {
 
     private string MyEvent5Handler()
     {
-        return "I Hate Cats.";
+        return "Woo! Start Game!";
     }
 
     private void MyThirdEventHandler(string s)

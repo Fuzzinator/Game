@@ -25,7 +25,7 @@ public class delegates : MonoBehaviour {
         MyEvent();
         MyEvent2();
         MyEvent3("Even More Stuff!!!");
-        MyEvent4("Fourth set of words");
+        MyEvent5();
         print(MyEvent5());
         
 	}

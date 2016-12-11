@@ -15,9 +15,9 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
 
     public void Attack()
     {
-        for(int i = 0; i < numAttacks; i++)
+        for(int j = 0; j < numAttacks; j++)
         {
-            damages[i] = (int)(AverageEnemy.strength * (UnityEngine.Random.Range(0.5f, 1.5f)));
+            damages[j] = (int)(AverageEnemy.strength * (UnityEngine.Random.Range(0.5f, 1.5f)));
         }
 
 
@@ -38,6 +38,7 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
                         {
                             print("Phew! The attack missed!");
                         }
+                        StartCoroutine(AverageEnemy.SmallPause());
                         break;
                     case 6:
                         percentHit = UnityEngine.Random.Range(Player.dexterity - 5, Player.dexterity + 5);
@@ -49,6 +50,7 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
                         {
                             print("Phew! The attack missed!");
                         }
+                        StartCoroutine(AverageEnemy.SmallPause());
                         break;
                     case 7:
                         hitPlayer = UnityEngine.Random.Range(Player.dexterity - 3, Player.dexterity + 7);
@@ -60,6 +62,7 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
                         {
                             print("Phew! The attack missed!");
                         }
+                        StartCoroutine(AverageEnemy.SmallPause());
                         break;
                     case 8:
                         percentHit = UnityEngine.Random.Range(Player.dexterity - 2, Player.dexterity + 8);
@@ -71,6 +74,7 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
                         {
                             print("Phew! The attack missed!");
                         }
+                        StartCoroutine(AverageEnemy.SmallPause());
                         break;
                     case 9:
                         hitPlayer = UnityEngine.Random.Range(Player.dexterity - 1, Player.dexterity + 9);
@@ -82,6 +86,7 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
                         {
                             print("Phew! The attack missed!");
                         }
+                        StartCoroutine(AverageEnemy.SmallPause());
                         break;
                     case 10:
                         percentHit = UnityEngine.Random.Range(Player.dexterity, Player.dexterity + 10);
@@ -92,7 +97,9 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
                         else
                         {
                             print("Phew! The attack missed!");
+                            
                         }
+                        StartCoroutine(AverageEnemy.SmallPause());
                         break;
                 }
             }
@@ -112,5 +119,7 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
         print("Ouch! Enemy hits you for " + damages[attackNum] + " damage!");
         
     }
+
+
 
 }

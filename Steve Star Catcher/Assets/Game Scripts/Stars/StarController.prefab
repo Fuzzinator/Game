@@ -322,6 +322,7 @@ MonoBehaviour:
   blueIncrease: 3
   greenIncrease: 5
   collideSparks: {fileID: 114496}
+  starSound: {fileID: 0}
 --- !u!135 &13507672
 SphereCollider:
   m_ObjectHideFlags: 1

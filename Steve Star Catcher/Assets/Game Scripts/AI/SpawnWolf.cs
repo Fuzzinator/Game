@@ -12,6 +12,8 @@ public class SpawnWolf : MonoBehaviour
     //public Transform wolfSpawn;
     public float offset = 30;
 
+    public AudioSource wolfMusic;
+    public AudioSource inGameMusic;
 
     
 
@@ -45,9 +47,12 @@ public class SpawnWolf : MonoBehaviour
         StaticVars.firstCall2 = true;
     }
 
+ 
 
     IEnumerator SpawnerWolf()
     {
+
+
         int i = Random.Range(1, 10);
         
 
@@ -77,9 +82,12 @@ public class SpawnWolf : MonoBehaviour
             //wolfArt.transform.position = wolfArtVector;
             EnemyAgent.destination = spawn1;
             offset /= 2;
+            inGameMusic.Stop();
+            wolfMusic.Play();
+
             //wolfSpawn = spawn2;
 
-            
+
 
         }
         else
@@ -103,17 +111,28 @@ public class SpawnWolf : MonoBehaviour
             wolf.transform.position = wolfVector3;
             EnemyAgent.destination = spawn2;
 
-
+            inGameMusic.Stop();
+            wolfMusic.Play();
 
             
+
+
+
 
         }
 
         yield return new WaitForSeconds(1);
-        
 
+        StartCoroutine(WolfMusic());
 
         //StartCoroutine(StopWolfSpawn());
+    }
+
+    IEnumerator WolfMusic()
+    {
+        yield return new WaitForSeconds(10);
+        wolfMusic.Stop();
+
     }
 
     void OnTriggerEnter(Collider col)

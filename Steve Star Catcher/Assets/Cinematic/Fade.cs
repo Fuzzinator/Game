@@ -2,15 +2,18 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
+
+
 public class Fade : MonoBehaviour {
-    public GameObject fade;
+    //public GameObject fade;
+    public float duration = 5f;
     //public GameObject canvas;
 
-    private IEnumerator Fading()
+    public IEnumerator Fading()
     {
-        yield return new WaitForSeconds(10);
-        fade.SetActive(true);
-        yield return new WaitForSeconds(.6f);
+        yield return new WaitForSeconds(duration);
+       // fade.SetActive(true);
+       // yield return new WaitForSeconds(.6f);
         //canvas.SetActive(true);
         //fade.SetActive(false);
         SceneManager.LoadScene(1);

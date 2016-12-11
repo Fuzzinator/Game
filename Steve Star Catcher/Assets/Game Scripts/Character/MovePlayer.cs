@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 using System;
 
 public class MovePlayer : MonoBehaviour {
@@ -15,7 +16,11 @@ public class MovePlayer : MonoBehaviour {
     public GameObject HurtAir;
     public GameObject HurtIdle;
     public GameObject HurtRunning;
-   
+
+
+    public static bool canFlash = true;
+    //public Color flashRed = new Color(1f, 0f, 0f, 0.1f);
+
     //assign location as a temp var to move character
     private Vector3 tempposition;
 
@@ -102,6 +107,8 @@ public class MovePlayer : MonoBehaviour {
 
     }
 
+
+
     void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.layer == 15)
@@ -128,25 +135,26 @@ public class MovePlayer : MonoBehaviour {
     //    }
     //}
 
-    IEnumerator hare_hurt()
-    {
-        if (Input.GetAxis("Horizontal") > 0)
-        {
-            print("launch left");
-            //tempposition.x = force;
-            //controller.Move(tempposition * Time.deltaTime);
-            
-        }
+    //IEnumerator hare_hurt()
+    //{
 
-        if (Input.GetAxis("Horizontal") < 0)
-        {
-            print("launch right");
-            //tempposition.x = -force;
-            //controller.Move(tempposition * Time.deltaTime);
-        }
-        yield return new WaitForSeconds(hurtTime);
-        hurt = false;
-    }
+    //    if (Input.GetAxis("Horizontal") > 0)
+    //    {
+    //        print("launch left");
+    //        //tempposition.x = force;
+    //        //controller.Move(tempposition * Time.deltaTime);
+            
+    //    }
+
+    //    if (Input.GetAxis("Horizontal") < 0)
+    //    {
+    //        print("launch right");
+    //        //tempposition.x = -force;
+    //        //controller.Move(tempposition * Time.deltaTime);
+    //    }
+    //    yield return new WaitForSeconds(hurtTime);
+
+    //}
 
     // Update is called once per frame update is bad
     void Update () {
@@ -164,7 +172,18 @@ public class MovePlayer : MonoBehaviour {
             
 
         }
+        if (Input.GetKeyDown("w") && jumpCount < jumpMax - 1)
+        {
+            tempposition.y = jumpForce;
+            jumpCount++;
 
+
+        }
+        //if (hurt && canFlash)
+        //{
+        //    canFlash = false;
+        //    StartCoroutine(FlashScreen());
+        //}
 
         if (controller.isGrounded == false)
         {
@@ -190,11 +209,13 @@ public class MovePlayer : MonoBehaviour {
             }
             if (hurt)
             {
+
                 MidAir_Up.SetActive(false);
                 MidAir_Down.SetActive(false);
                 Idle.SetActive(false);
                 Running.SetActive(false);
                 HurtAir.SetActive(true);
+                
                 //yield return new WaitForSeconds(3);
                 //hurt = false;
 
@@ -216,6 +237,7 @@ public class MovePlayer : MonoBehaviour {
             //    Running.SetActive(false);
             //    Hurt.SetActive(false);
             //}
+
 
 
 

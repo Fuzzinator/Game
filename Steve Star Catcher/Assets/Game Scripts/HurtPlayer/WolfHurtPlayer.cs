@@ -9,6 +9,8 @@ public class WolfHurtPlayer : MonoBehaviour {
     public float speed = -80;
     private Vector3 kickBack;
 
+    public AudioSource whoops;
+
     //public int wolfDamage = 5;    
 
     IEnumerator FrontBlowBack()
@@ -43,6 +45,7 @@ public class WolfHurtPlayer : MonoBehaviour {
 
         if (col.name == "KnockBackFront")
         {
+            whoops.Play();
             StaticVars.playerScore -= DifficultyStaticVars.wolfDamage;
 
             //print(StaticVars.playerScore);

@@ -8,12 +8,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/UI/Main Menu/main menu.unity
   - enabled: 1
-    path: Assets/Game Scripts/Prototype One.unity
+    path: Assets/Game Scripts/Practice Lvl.unity
   - enabled: 1
     path: Assets/UI/Game Over/Game Over.unity
   - enabled: 1
     path: Assets/UI/Level Complete/Level Complete.unity
   - enabled: 1
-    path: Assets/Game Scripts/Level 2.unity
+    path: Assets/Game Scripts/Prototype One.unity
   - enabled: 1
     path: Assets/Cinematic/lvl1Start.unity
+  - enabled: 1
+    path: Assets/Game Scripts/Level 2.unity

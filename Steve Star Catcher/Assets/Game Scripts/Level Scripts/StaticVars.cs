@@ -8,6 +8,8 @@
     public static float startBackPos = 200f;
 
     public static int playerScore = 0;
+    public static int totalScore = 0;
+    public static int highScore;
     public static float totalTime = 0;
 
     public static bool firstCall1;
@@ -18,6 +20,8 @@
     public static float gravity = 1f;
 
     public static bool intro = true;
+
+    public static int nextLvl = 4;
 
 
 

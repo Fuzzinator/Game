@@ -134,6 +134,8 @@ public class DestroyStar : MonoBehaviour {
                 DifficultyStaticVars.startTime += greenIncrease;
             }
             //gameObject.SetActive(false);
+            //StartCoroutine(starSound.PlayStarSound());
+            starSound.staticStarSound.Play();
             Destroy(gameObject/*, endTime*/);
    
 

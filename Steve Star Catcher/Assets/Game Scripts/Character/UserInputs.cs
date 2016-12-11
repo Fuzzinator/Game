@@ -24,6 +24,14 @@ public class UserInputs : MonoBehaviour
         {
             UserInput(KeyCode.Space);
         }
+        if (Input.GetKeyDown(KeyCode.D) && UserInput != null)
+        {
+            UserInput(KeyCode.D);
+        }
+        if (Input.GetKeyDown(KeyCode.A) && UserInput != null)
+        {
+            UserInput(KeyCode.A);
+        }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {

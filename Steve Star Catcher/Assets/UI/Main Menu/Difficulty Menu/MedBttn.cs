@@ -10,12 +10,13 @@ public class MedBttn : MonoBehaviour
 
     void Start()
     {
+        DifficultyStaticVars.buttonAction = "NewGame";
         Button btn = button.GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
 
     }
 
-    void TaskOnClick()
+    static public void TaskOnClick()
     {
 
         DifficultyStaticVars.cameraSpeed = 0.4f;
@@ -23,14 +24,21 @@ public class MedBttn : MonoBehaviour
         DifficultyStaticVars.medBackSpeed = .50f;
         DifficultyStaticVars.clsBackSpeed = .55f;
         DifficultyStaticVars.startTime = 30;
-        DifficultyStaticVars.wolfDamage = 7;
-        DifficultyStaticVars.cactusDamage = 3;
+        DifficultyStaticVars.wolfDamage = 5;
+        DifficultyStaticVars.cactusDamage = 1;
         DifficultyStaticVars.hurtTime = 1;
         DifficultyStaticVars.wolfFrequency = 10;
         DifficultyStaticVars.wolfSpawnYes = 9;
         //DifficultyStaticVars.wolfJump;
         DifficultyStaticVars.wolfCanSpawn = true;
         DifficultyStaticVars.difficulty = "Medium";
-        SceneManager.LoadScene(5);
+        if (DifficultyStaticVars.buttonAction == "NewGame")
+        {
+            SceneManager.LoadScene(5);
+        }
+        else if (DifficultyStaticVars.buttonAction == "Retry")
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }
