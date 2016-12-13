@@ -23,7 +23,7 @@ public class Player : HumanBase {
     //public int damage;
     public int hitCount;
 
-    public static int[] damage;
+    
 
     public int numAttacks;
 
@@ -35,6 +35,7 @@ public class Player : HumanBase {
     // Use this for initialization
     public override void Start () {
         base.Start();
+
 
         tired = false;
 
@@ -60,6 +61,8 @@ public class Player : HumanBase {
         charisma = characteristics[4];
 
         numAttacks = dexterity / 2;
+
+        
 
         //for (int i = 0; i < numAttacks; i++)
         //{
@@ -93,15 +96,15 @@ public class Player : HumanBase {
             
             while (hitCount < numAttacks)
             {
-                foreach (int hurt in damage)
-                {
+                //foreach (int hurt in damage)
+                //{
                     
                     print("You swing at the enemy!");
                     StartCoroutine(SmallPause());
                     Damage(hit, hitCount);
                     hitCount++;
                     StartCoroutine(SmallPause());
-                }
+                //}
             }
             hitCount = 0;
             tired = true;
@@ -120,7 +123,7 @@ public class Player : HumanBase {
 
     public static void Damage(GameObject hit, int damageNum)
     {
-        print("You hit the enemy for " + damage[damageNum] + " damage");
+        print("You hit the enemy for " +/* damage[damageNum] */ damage + " damage");
         
     }
 

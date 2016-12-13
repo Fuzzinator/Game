@@ -20,6 +20,6 @@ public class AverageShmo : HumanBase {
 
     public static string sayHello(string s)
     {
-        return "Hello!";
+        return "Hey friend! Over Here!";
     }
 }

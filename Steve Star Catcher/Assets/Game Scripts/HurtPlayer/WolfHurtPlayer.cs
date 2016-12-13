@@ -62,6 +62,7 @@ public class WolfHurtPlayer : MonoBehaviour {
             //}
 
             StartCoroutine(FrontBlowBack());
+            StartCoroutine(plusMinus.wolfFlashMinus());
 
         }
 

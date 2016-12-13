@@ -13,8 +13,10 @@ public class HumanBase : MonoBehaviour, IAttack, IDamage, ITalk {
     public static int charisma;
     public static int health;
 
+    public static int damage = 5;
 
-    public virtual void Attack()
+
+    public virtual void Attack() 
     {
         throw new NotImplementedException();
     }

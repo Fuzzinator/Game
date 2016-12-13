@@ -23,4 +23,9 @@ public class Fade : MonoBehaviour {
 	void Start () {
         StartCoroutine(Fading());
 	}
+
+    void OnMouseDown()
+    {
+        SceneManager.LoadScene(1);
+    }
 }

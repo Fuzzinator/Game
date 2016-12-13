@@ -42,17 +42,24 @@ public class DestroyStar : MonoBehaviour {
 
     private ParticleSystem starCore;
 
+    public static Action<GameObject> showScore;
+    public static string color;
+
+    public static GameObject starObject;
+
+
     //IEnumerator EndStar()
     //{
 
     //    yield return WaitForSeconds(endTime);
 
-        
+
     //}
 
 
-        void Start()
+    void Start()
     {
+        starObject = gameObject;
         rigid = GetComponent<Rigidbody>();
         StartCoroutine(RunRandomForce());
         //canCollect = true;
@@ -118,24 +125,32 @@ public class DestroyStar : MonoBehaviour {
             {
                 ++StaticVars.playerScore;
                 DifficultyStaticVars.startTime += whiteIncrease;
-            }else if(starColor.name == "Red_Star")
+                //StartCoroutine(plusMinus.StarIncrease("White_Star", gameObject ));
+            }
+            else if(starColor.name == "Red_Star")
             {
                 StaticVars.playerScore += redIncrease;
                 DifficultyStaticVars.startTime += redIncrease;
+                //StartCoroutine(plusMinus.StarIncrease("Red_Star", gameObject));
             }
             else if (starColor.name == "Blue_Star")
             {
                 StaticVars.playerScore += blueIncrease;
                 DifficultyStaticVars.startTime += blueIncrease;
+                //StartCoroutine(plusMinus.StarIncrease("Blue_Star", gameObject));
             }
             else if (starColor.name == "Green_Star")
             {
                 StaticVars.playerScore += greenIncrease;
                 DifficultyStaticVars.startTime += greenIncrease;
+                //StartCoroutine(plusMinus.StarIncrease("Green_Star", gameObject));
             }
+
             //gameObject.SetActive(false);
             //StartCoroutine(starSound.PlayStarSound());
             starSound.staticStarSound.Play();
+            color = starColor.name;
+            //showScore(gameObject);
             Destroy(gameObject/*, endTime*/);
    
 

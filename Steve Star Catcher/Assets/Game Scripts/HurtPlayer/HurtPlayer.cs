@@ -26,6 +26,7 @@ public class HurtPlayer : MonoBehaviour {
         MovePlayer.hurt = true;
 
         StartCoroutine(FlashScreen());
+
         //DestroyStar.canCollect = false;
        
         if (temp > 0)
@@ -64,6 +65,7 @@ public class HurtPlayer : MonoBehaviour {
 
             whoops.Play();
             MovePlayer.canFlash = false;
+            
 
             if (StaticVars.playerScore >= DifficultyStaticVars.cactusDamage && MovePlayer.hurt == false)
             {
@@ -78,6 +80,7 @@ public class HurtPlayer : MonoBehaviour {
             }
 
             StartCoroutine(FrontBlowBack());
+            StartCoroutine(plusMinus.cactusFlashMinus());
 
         }
         

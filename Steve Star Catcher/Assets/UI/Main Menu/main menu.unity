@@ -1313,6 +1313,19 @@ MonoBehaviour:
   fade: {fileID: 342564536}
   canvas: {fileID: 1441968314}
   duration: 13
+--- !u!114 &342564538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 342564536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee68f7186246cfe4c85230313a98028b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  video: {fileID: 342564536}
+  canvas: {fileID: 1441968314}
 --- !u!1 &380873741
 GameObject:
   m_ObjectHideFlags: 0
