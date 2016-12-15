@@ -9,6 +9,10 @@ public class NextLvl : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         currentScene = SceneManager.GetActiveScene().buildIndex;
+        if(currentScene == 1)
+        {
+            StaticVars.nextLvl = 4;
+        }
         if (currentScene == 4)
         {
             StaticVars.nextLvl = 6;

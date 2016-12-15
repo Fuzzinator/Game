@@ -14,7 +14,7 @@ public class AverageEnemy : HumanBase {
     {
         base.Start();
 
-        //Recycle.SendToGenerator += AddToList;
+        
 
         CountEnemies.enemies.Add(gameObject);
 
@@ -24,11 +24,7 @@ public class AverageEnemy : HumanBase {
             scoreIncrease = UnityEngine.Random.Range(-2, 2);
             characteristics[charCounter] += scoreIncrease;
 
-            //if (characteristics[scoreIncrease] > 10)
-            //{
-            //    characteristics[i]--;
-            //    chngScore++;
-            //}
+            
 
         }
 
@@ -71,10 +67,5 @@ public class AverageEnemy : HumanBase {
         yield return new WaitForSeconds(1);
     }
 
-
-    //private void AddToList(NavAgent obj)
-    //{
-    //    RecycleList.Add(obj);
-    //    obj.transform.position = spawner.position
-    //}
+    
 }

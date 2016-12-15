@@ -24,10 +24,11 @@ public class plusMinus : MonoBehaviour {
     private static GameObject p5;
 
     private static string difficulty;
+    public static string starColor;
 
     void Start()
     {
-        difficulty = DifficultyStaticVars.difficulty;
+        difficulty = "Medium";//DifficultyStaticVars.difficulty;
         DestroyStar.showScore += showScoreHandler;
 
         min1 = minus1;
@@ -43,8 +44,10 @@ public class plusMinus : MonoBehaviour {
 
     private void showScoreHandler(GameObject star)
     {
-        
-        StartCoroutine(StarIncrease(star));
+        starColor = DestroyStar.color;
+        Destroy(star);
+        DestroyImmediate(star);
+        StartCoroutine(StarIncrease());
     }
 
     public static IEnumerator cactusFlashMinus()
@@ -92,7 +95,7 @@ public class plusMinus : MonoBehaviour {
     }
 
 
-    public static IEnumerator StarIncrease(GameObject toDestroy)
+    public static IEnumerator StarIncrease()
     {
         min1.SetActive(false);
         min3.SetActive(false);
@@ -102,7 +105,7 @@ public class plusMinus : MonoBehaviour {
         p2.SetActive(false);
         p3.SetActive(false);
         p5.SetActive(false);
-        switch (DestroyStar.color)
+        switch (starColor)
         {
             case "White_Star":
                 p1.SetActive(true);
@@ -118,7 +121,7 @@ public class plusMinus : MonoBehaviour {
                 break;
         }
         
-        Destroy(toDestroy);
+        //Destroy(toDestroy);
         yield return new WaitForSeconds(.5f);
         p1.SetActive(false);
         p2.SetActive(false);

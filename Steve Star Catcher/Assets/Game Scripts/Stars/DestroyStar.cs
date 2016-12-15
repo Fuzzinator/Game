@@ -150,9 +150,10 @@ public class DestroyStar : MonoBehaviour {
             //StartCoroutine(starSound.PlayStarSound());
             starSound.staticStarSound.Play();
             color = starColor.name;
-            //showScore(gameObject);
+           // showScore(gameObject);
             Destroy(gameObject/*, endTime*/);
-   
+           // DestroyImmediate(gameObject);
+
 
         }
         else
@@ -164,9 +165,11 @@ public class DestroyStar : MonoBehaviour {
             StartCoroutine(CollideSparks());
             StartCoroutine(StarFlash());
             Destroy(gameObject, endTime);
+            
 
         }
     }
+
 
 
     }

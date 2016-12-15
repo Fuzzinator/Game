@@ -62,12 +62,12 @@ public class Player : HumanBase {
 
         numAttacks = dexterity / 2;
 
+        foreach (char letter in "Hello")
+        {
+            print(letter);
+        }
         
 
-        //for (int i = 0; i < numAttacks; i++)
-        //{
-        //    damage[i] = (int)(strength * (UnityEngine.Random.Range(0.5f, 1.5f)));
-        //}
 
         playerSpeed = speed;
         playerSpeed += ((dexterity * 2) - playerSpeed);
@@ -78,16 +78,11 @@ public class Player : HumanBase {
         tempPos.x = StaticVars.playerSpeed * Input.GetAxis("Horizontal");
 
 
-        //StartCoroutine(BaseState());
-
-        // Move = MoveHander(dexterity);
-
     }
 
     public void Attack(GameObject hit)
     {
-        //base.Attack();
-
+        
         
         
 
@@ -96,15 +91,13 @@ public class Player : HumanBase {
             
             while (hitCount < numAttacks)
             {
-                //foreach (int hurt in damage)
-                //{
-                    
+                
                     print("You swing at the enemy!");
                     StartCoroutine(SmallPause());
                     Damage(hit, hitCount);
                     hitCount++;
                     StartCoroutine(SmallPause());
-                //}
+                
             }
             hitCount = 0;
             tired = true;
@@ -123,7 +116,7 @@ public class Player : HumanBase {
 
     public static void Damage(GameObject hit, int damageNum)
     {
-        print("You hit the enemy for " +/* damage[damageNum] */ damage + " damage");
+        print("You hit the enemy for " + damage + " damage");
         
     }
 

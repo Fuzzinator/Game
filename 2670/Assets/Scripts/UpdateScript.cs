@@ -37,19 +37,6 @@ public class UpdateScript : MonoBehaviour {
 	void Update () {
 
 
-        if (Input.GetKeyDown(KeyCode.RightArrow) && UserInputs.UserInput != null)
-        {
-            UserInputs.UserInput(KeyCode.RightArrow);
-        }
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && UserInputs.UserInput != null)
-        {
-            UserInputs.UserInput(KeyCode.LeftArrow);
-        }
-        if (Input.GetKeyDown(KeyCode.Space) && UserInputs.UserInput != null)
-        {
-            UserInputs.UserInput(KeyCode.Space);
-        }
-
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             
@@ -61,8 +48,6 @@ public class UpdateScript : MonoBehaviour {
         float curSpeed = Player.playerSpeed * Input.GetAxis("Vertical");
         creature.SimpleMove(forward * curSpeed);
 
-        //tempPos.x = Input.GetAxis("Horizontal")* StaticVars.playerSpeed;
-        //tempPos.z = Input.GetAxis("Vertical");
         if (Input.GetKeyDown("space") && jumpCount < jumpMax)
         {
             tempPos.y = jumpForce;
@@ -81,12 +66,10 @@ public class UpdateScript : MonoBehaviour {
             player.GetComponent<CountEnemies>().enemiesSize();
         }
 
-        //this.transform.Rotate((Input.GetAxis("Mouse Y") * -rotationSpeed * Time.deltaTime), (Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime), 0, Space.World);
-
+       
         tempPos.y -= gravity * Time.deltaTime;
         yaw += rotationSpeed * Input.GetAxis("Mouse X");
-        pitch -= 0;// rotationSpeed * Input.GetAxis("Mouse Y");
-
+        pitch -= 0;
         transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
 
 

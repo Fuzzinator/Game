@@ -15,16 +15,10 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
 
     public void Attack()
     {
-        //for(int j = 0; j < numAttacks; j++)
-        //{
-        //    damages[j] = (int)(AverageEnemy.strength * (UnityEngine.Random.Range(0.5f, 1.5f)));
-        //}
-
-
+   
         while ( i < numAttacks)
         {
-            //foreach (int attacks in damages)
-            //{
+            
                 switch (Player.dexterity)
                 {
                     case 5:
@@ -101,7 +95,7 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
                         }
                         StartCoroutine(AverageEnemy.SmallPause());
                         break;
-                //}
+                
             }
             i++;
             attackNum++;
@@ -116,7 +110,7 @@ public class EnemyAttack : MonoBehaviour, IAttack, IDamage {
     public void Damage()
     {
         
-        print("Ouch! Enemy hits you for " + AverageEnemy.damage/*damages[attackNum]*/ + " damage!");
+        print("Ouch! Enemy hits you for " + AverageEnemy.damage + " damage!");
         
     }
 

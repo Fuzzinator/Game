@@ -17,7 +17,7 @@ public class delegates : MonoBehaviour {
     public delegate string MyDelegate5();
     public static MyDelegate5 MyEvent5;
 
-    public static Func<string> MyEvent6;
+    public static Action<string> MyEvent6;
 
 
 	// Use this for initialization
@@ -25,7 +25,9 @@ public class delegates : MonoBehaviour {
         MyEvent();
         MyEvent2();
         MyEvent3("Even More Stuff!!!");
+        MyEvent4("This game does things");
         MyEvent5();
+        MyEvent6("This is not a func");
         print(MyEvent5());
         
 	}

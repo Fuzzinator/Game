@@ -13,6 +13,8 @@ public class HumanBase : MonoBehaviour, IAttack, IDamage, ITalk {
     public static int charisma;
     public static int health;
 
+    public static int numChars;
+
     public static int damage = 5;
 
 
@@ -40,6 +42,12 @@ public class HumanBase : MonoBehaviour, IAttack, IDamage, ITalk {
         speed = dexterity;
 
         health = 10;
+
+        foreach(int i in characteristics)
+        {
+            numChars++;
+        }
+
 
     }
 
